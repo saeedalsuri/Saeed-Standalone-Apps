@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Suno Architect v06 - Fully Editable</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: #0a0a0b;
+        color: #e0e0e0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 1100px;
+        margin: auto;
+        background: #161618;
+        padding: 30px;
+        border-radius: 15px;
+        border: 1px solid #00d1b2;
+        box-shadow: 0 0 30px rgba(0, 209, 178, 0.1);
+      }
+      h1 {
+        color: #00d1b2;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        border-bottom: 1px solid #333;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+      }
+      .section {
+        margin-bottom: 25px;
+        padding: 20px;
+        background: #1e1e21;
+        border-radius: 10px;
+        border: 1px solid #333;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #00d1b2;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+      }
+      select,
+      textarea,
+      input[type="file"] {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid #333;
+        background: #000;
+        color: #fff;
+        font-size: 1rem;
+        box-sizing: border-box;
+      }
+      .btn {
+        padding: 12px 20px;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .btn-import {
+        background: #00d1b2;
+        color: #000;
+        margin-bottom: 10px;
+      }
+      .btn-clear {
+        background: #ff4444;
+        color: #fff;
+        margin-left: 10px;
+        font-size: 0.8rem;
+        padding: 8px 15px;
+      }
+      .btn-generate {
+        width: 100%;
+        padding: 18px;
+        background: #00d1b2;
+        color: #000;
+        font-size: 1.2rem;
+        margin-top: 10px;
+      }
+      .btn-copy {
+        background: #444;
+        color: #fff;
+        font-size: 0.7rem;
+        padding: 5px 10px;
+        float: right;
+        margin-top: -35px;
+        z-index: 10;
+        position: relative;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        margin-top: 30px;
+      }
+      textarea.output-box {
+        min-height: 400px;
+        background: #000;
+        padding: 15px;
+        border-radius: 5px;
+        font-family: "Courier New", monospace;
+        font-size: 0.9rem;
+        white-space: pre-wrap;
+        border-left: 4px solid #00d1b2;
+        color: #fff;
+        resize: vertical;
+      }
+      .status {
+        font-size: 0.85rem;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        display: none;
+      }
+      .success {
+        background: #114411;
+        color: #88ff88;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Suno Prompt Architect</h1>
+
+      <div class="section">
+        <label>1. Import Templates (JSON)</label>
+        <input type="file" id="jsonInput" accept=".json" />
+        <div style="margin-top: 10px">
+          <button class="btn btn-import" onclick="importJSON()">
+            Save to Local Storage
+          </button>
+          <button class="btn btn-clear" onclick="clearStoredStyles()">
+            Clear Imported Styles
+          </button>
+        </div>
+        <div id="importStatus" class="status"></div>
+      </div>
+
+      <div class="section">
+        <label>2. Select Style Template</label>
+        <select id="styleSelector" onchange="updateStylePreview()"></select>
+      </div>
+
+      <div class="section">
+        <label>3. Format & Paste Lyrics</label>
+        <select
+          id="lyricsStructureSelector"
+          onchange="applyStructureTemplate()"
+          style="margin-bottom: 15px"
+        >
+          <option value="default">
+            (Default) Verse 1, Chorus 1, Verse 2, Chorus 2, Bridge, Outro
+          </option>
+          <option value="V1-V2-C-V3-C-B-O">
+            (Verse 1, Verse 2, Chorus 1, Verse 3, Chorus 2, Bridge, Outro)
+          </option>
+          <option value="V1-V2-V3-V4-C1-C2-O">
+            (Verse 1, Verse 2, Verse 3, Verse 4, Chorus 1, Chorus 2, Outro)
+          </option>
+          <option value="V1-PC-C1-V2-PC-C2-V3-V4-B-O">
+            (Verse 1, Pre-Chorus, Chorus 1, Verse 2, Pre-Chorus, Chorus 2, Verse 3, Verse 4, Bridge, Outro)
+          </option>
+        </select>
+        <textarea
+          id="fullLyricsInput"
+          rows="15"
+          placeholder="Verse 1&#10;Sun rise early over red-dust road...&#10;&#10;Chorus (1)&#10;We rise, we rise..."
+        ></textarea>
+        <button class="btn btn-generate" onclick="generateSunoPrompt()">
+          PROCESS & ARRANGE LYRICS
+        </button>
+      </div>
+
+      <div class="grid">
+        <div>
+          <label>Style Prompt Box (Editable)</label>
+          <button class="btn btn-copy" onclick="copyText('styleOutput')">
+            COPY
+          </button>
+          <textarea id="styleOutput" class="output-box"></textarea>
+        </div>
+        <div>
+          <label>Suno Lyrics Structure (Editable)</label>
+          <button class="btn btn-copy" onclick="copyText('lyricsOutput')">
+            COPY
+          </button>
+          <textarea id="lyricsOutput" class="output-box"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/neutralino.js"></script>
+    <script>
+      let currentLibrary = [];
+
+      Neutralino.init();
+
+      Neutralino.events.on("ready", async () => {
+        try {
+          const res = await fetch("NewFullTemplates.json");
+          if (res.ok) {
+            const builtInStyles = await res.json();
+            loadLibrary(builtInStyles);
+          } else {
+            loadLibrary([]);
+          }
+        } catch (err) {
+          console.error("Failed to load default styles:", err);
+          loadLibrary([]);
+        }
+      });
+
+      function loadLibrary(builtInStyles = []) {
+        const stored = localStorage.getItem("suno_custom_styles");
+        const customStyles = stored ? JSON.parse(stored) : [];
+        currentLibrary = [...builtInStyles, ...customStyles];
+        refreshSelector();
+      }
+
+      function refreshSelector() {
+        const selector = document.getElementById("styleSelector");
+        selector.innerHTML = "";
+        currentLibrary.forEach((item, index) => {
+          let opt = document.createElement("option");
+          opt.value = index;
+          opt.innerText = item.name || "Untitled Style";
+          selector.appendChild(opt);
+        });
+        updateStylePreview();
+      }
+
+      function importJSON() {
+        const fileInput = document.getElementById("jsonInput");
+        const status = document.getElementById("importStatus");
+        if (!fileInput.files.length) return;
+
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          try {
+            const data = JSON.parse(e.target.result);
+            let newStyles = Array.isArray(data) ? data : [data];
+            newStyles = newStyles.map((s) => ({
+              name: s.name || s.template_name || "Untitled Style",
+              style: s.style || s.style_prompt || "",
+              structure: s.structure || "",
+            }));
+            const stored = localStorage.getItem("suno_custom_styles");
+            const existingCustom = stored ? JSON.parse(stored) : [];
+            localStorage.setItem(
+              "suno_custom_styles",
+              JSON.stringify([...existingCustom, ...newStyles]),
+            );
+            status.innerText = `Saved ${newStyles.length} styles to local storage.`;
+            status.className = "status success";
+            loadLibrary();
+          } catch (err) {
+            alert("Invalid JSON format.");
+          }
+        };
+        reader.readAsText(fileInput.files[0]);
+      }
+
+      function clearStoredStyles() {
+        if (confirm("Delete all imported styles?")) {
+          localStorage.removeItem("suno_custom_styles");
+          loadLibrary();
+        }
+      }
+
+      function applyStructureTemplate() {
+        const layout = document.getElementById("lyricsStructureSelector").value;
+        const box = document.getElementById("fullLyricsInput");
+        if (box.value.trim() !== "") return;
+
+        if (layout === "V1-V2-C-V3-C-B-O") {
+          box.value =
+            "Verse 1\n\n\nVerse 2\n\n\nChorus 1\n\n\nVerse 3\n\n\nChorus 2\n\n\nBridge\n\n\nOutro\n";
+        } else if (layout === "V1-V2-V3-V4-C1-C2-O") {
+          box.value =
+            "Verse 1\n\n\nVerse 2\n\n\nVerse 3\n\n\nVerse 4\n\n\nChorus 1\n\n\nChorus 2\n\n\nOutro\n";
+        } else if (layout === "V1-PC-C1-V2-PC-C2-V3-V4-B-O") {
+          box.value =
+            "Verse 1\n\n\nPre-Chorus\n\n\nChorus 1\n\n\nVerse 2\n\n\nPre-Chorus\n\n\nChorus 2\n\n\nVerse 3\n\n\nVerse 4\n\n\nBridge\n\n\nOutro\n";
+        } else {
+          box.value =
+            "Verse 1\n\n\nChorus 1\n\n\nVerse 2\n\n\nChorus 2\n\n\nBridge\n\n\nOutro\n";
+        }
+      }
+
+      function updateStylePreview() {
+        const idx = document.getElementById("styleSelector").value;
+        if (currentLibrary[idx])
+          document.getElementById("styleOutput").value =
+            currentLibrary[idx].style;
+      }
+
+      function generateSunoPrompt() {
+        const rawLyrics = document.getElementById("fullLyricsInput").value;
+        const styleIdx = document.getElementById("styleSelector").value;
+        const selectedTemplate = currentLibrary[styleIdx];
+
+        if (!rawLyrics.trim()) return alert("Please paste your lyrics first.");
+
+        const sections = {};
+        const parts = rawLyrics.split(
+          /(Verse \d|Pre-Chorus|Pre Chorus|PreChorus|Chorus(?: \d|\(\d\))?|Bridge|Outro)/i,
+        );
+
+        for (let i = 1; i < parts.length; i += 2) {
+          let key = parts[i].trim().toUpperCase();
+          let content = parts[i + 1] ? parts[i + 1].trim() : "";
+
+          if (key.includes("VERSE 1")) sections["V1"] = content;
+          else if (key.includes("VERSE 2")) sections["V2"] = content;
+          else if (key.includes("VERSE 3")) sections["V3"] = content;
+          else if (key.includes("VERSE 4")) sections["V4"] = content;
+          else if (
+            key.includes("PRE-CHORUS") ||
+            key.includes("PRE CHORUS") ||
+            key.includes("PRECHORUS")
+          )
+            sections["PRECHORUS"] = content;
+          else if (key.includes("CHORUS 1") || key.includes("CHORUS (1)"))
+            sections["C1"] = content;
+          else if (key.includes("CHORUS 2") || key.includes("CHORUS (2)"))
+            sections["C2"] = content;
+          else if (key.includes("CHORUS")) sections["CHORUS"] = content;
+          else if (key.includes("BRIDGE")) sections["BRIDGE"] = content;
+          else if (key.includes("OUTRO")) sections["OUTRO"] = content;
+        }
+
+        const defaultC1 = sections["C1"] || sections["CHORUS"] || "";
+        const defaultC2 = sections["C2"] || defaultC1;
+
+        let finalLyrics = "";
+        const layout = document.getElementById("lyricsStructureSelector").value;
+
+        // Base fallback blocks
+        let blocks = {
+          V1: "[Intro]\n\n[Verse 1]",
+          V2: "[Verse 2]",
+          V3: "[Verse 3]",
+          V4: "[Verse 4]",
+          C1: "[Chorus 1]",
+          C2: "[Chorus 2]",
+          PRECHORUS: "[Pre-Chorus]",
+          BRIDGE: "[Bridge]",
+          OUTRO: "[Outro]",
+        };
+
+        let templateParts = [];
+        if (selectedTemplate && selectedTemplate.structure) {
+          let s = selectedTemplate.structure.replace(/\[End\]/i, "").trim();
+          templateParts = s.split(/\{([^}]+)\}/);
+          let currentPrefix = "";
+          let chorusCount = 1;
+
+          for (let i = 0; i < templateParts.length; i++) {
+            if (i % 2 === 0) {
+              currentPrefix += templateParts[i];
+            } else {
+              let placeholder = templateParts[i].toUpperCase().trim();
+              let key = "";
+              if (placeholder.includes("V1") || placeholder.includes("VERSE 1"))
+                key = "V1";
+              else if (
+                placeholder.includes("V2") ||
+                placeholder.includes("VERSE 2")
+              )
+                key = "V2";
+              else if (
+                placeholder.includes("V3") ||
+                placeholder.includes("VERSE 3")
+              )
+                key = "V3";
+              else if (
+                placeholder.includes("V4") ||
+                placeholder.includes("VERSE 4")
+              )
+                key = "V4";
+              else if (
+                placeholder === "CHORUS" ||
+                placeholder === "CHORUS1" ||
+                placeholder === "CHORUS 1"
+              ) {
+                key = "C" + chorusCount;
+                chorusCount++;
+              } else if (
+                placeholder === "CHORUS2" ||
+                placeholder === "CHORUS 2"
+              )
+                key = "C2";
+              else if (
+                placeholder === "PRECHORUS" ||
+                placeholder === "PRE-CHORUS" ||
+                placeholder === "PRE CHORUS"
+              )
+                key = "PRECHORUS";
+              else if (placeholder === "BRIDGE") key = "BRIDGE";
+              else if (placeholder === "OUTRO") key = "OUTRO";
+
+              if (key) {
+                blocks[key] = currentPrefix.trim();
+                currentPrefix = "";
+              }
+            }
+          }
+        }
+
+        if (blocks["C1"] && (!blocks["C2"] || blocks["C2"] === "[Chorus 2]")) {
+          blocks["C2"] = blocks["C1"];
+        }
+
+        const buildSection = (key, text) => {
+          if (!text || text.trim() === "") return "";
+          return `${blocks[key]}\n${text.trim()}\n\n`;
+        };
+
+        if (layout === "V1-V2-C-V3-C-B-O") {
+          finalLyrics += buildSection("V1", sections["V1"]);
+          finalLyrics += buildSection("V2", sections["V2"]);
+          finalLyrics += buildSection("C1", defaultC1);
+          finalLyrics += buildSection("V3", sections["V3"]);
+          finalLyrics += buildSection("C2", defaultC2);
+          finalLyrics += buildSection("BRIDGE", sections["BRIDGE"]);
+          finalLyrics += buildSection("OUTRO", sections["OUTRO"]);
+        } else if (layout === "V1-V2-V3-V4-C1-C2-O") {
+          finalLyrics += buildSection("V1", sections["V1"]);
+          finalLyrics += buildSection("V2", sections["V2"]);
+          finalLyrics += buildSection("V3", sections["V3"]);
+          finalLyrics += buildSection("V4", sections["V4"]);
+          finalLyrics += buildSection("C1", defaultC1);
+          finalLyrics += buildSection("C2", defaultC2);
+          finalLyrics += buildSection("OUTRO", sections["OUTRO"]);
+        } else if (layout === "V1-PC-C1-V2-PC-C2-V3-V4-B-O") {
+          finalLyrics += buildSection("V1", sections["V1"]);
+          finalLyrics += buildSection("PRECHORUS", sections["PRECHORUS"]);
+          finalLyrics += buildSection("C1", defaultC1);
+          finalLyrics += buildSection("V2", sections["V2"]);
+          finalLyrics += buildSection("PRECHORUS", sections["PRECHORUS"]);
+          finalLyrics += buildSection("C2", defaultC2);
+          finalLyrics += buildSection("V3", sections["V3"]);
+          finalLyrics += buildSection("V4", sections["V4"]);
+          finalLyrics += buildSection("BRIDGE", sections["BRIDGE"]);
+          finalLyrics += buildSection("OUTRO", sections["OUTRO"]);
+        } else {
+          if (templateParts.length > 0) {
+            let currentPrefix = "";
+            let chorusCount = 1;
+            for (let i = 0; i < templateParts.length; i++) {
+              if (i % 2 === 0) {
+                currentPrefix += templateParts[i];
+              } else {
+                let placeholder = templateParts[i].toUpperCase().trim();
+                let content = "";
+                if (
+                  placeholder.includes("V1") ||
+                  placeholder.includes("VERSE 1")
+                )
+                  content = sections["V1"];
+                else if (
+                  placeholder.includes("V2") ||
+                  placeholder.includes("VERSE 2")
+                )
+                  content = sections["V2"];
+                else if (
+                  placeholder.includes("V3") ||
+                  placeholder.includes("VERSE 3")
+                )
+                  content = sections["V3"];
+                else if (
+                  placeholder.includes("V4") ||
+                  placeholder.includes("VERSE 4")
+                )
+                  content = sections["V4"];
+                else if (
+                  placeholder === "CHORUS" ||
+                  placeholder === "CHORUS1" ||
+                  placeholder === "CHORUS 1"
+                ) {
+                  content = defaultC1;
+                  chorusCount++;
+                } else if (
+                  placeholder === "CHORUS2" ||
+                  placeholder === "CHORUS 2"
+                )
+                  content = defaultC2;
+                else if (
+                  placeholder === "PRECHORUS" ||
+                  placeholder === "PRE-CHORUS" ||
+                  placeholder === "PRE CHORUS"
+                )
+                  content = sections["PRECHORUS"];
+                else if (placeholder === "BRIDGE") content = sections["BRIDGE"];
+                else if (placeholder === "OUTRO") content = sections["OUTRO"];
+
+                if (content && content.trim() !== "") {
+                  finalLyrics +=
+                    currentPrefix.trimStart() + content.trim() + "\n\n";
+                }
+                currentPrefix = "";
+              }
+            }
+            finalLyrics += currentPrefix.trimStart();
+          } else {
+            finalLyrics += buildSection("V1", sections["V1"]);
+            finalLyrics += buildSection("C1", defaultC1);
+            finalLyrics += buildSection("V2", sections["V2"]);
+            finalLyrics += buildSection("C2", defaultC2);
+            finalLyrics += buildSection("BRIDGE", sections["BRIDGE"]);
+            finalLyrics += buildSection("OUTRO", sections["OUTRO"]);
+          }
+        }
+
+        finalLyrics = finalLyrics.replace(/\n\s*\n/g, "\n\n").trim();
+        if (!finalLyrics.endsWith("[End]")) finalLyrics += "\n[End]";
+        document.getElementById("lyricsOutput").value = finalLyrics;
+      }
+
+      function copyText(id) {
+        const textarea = document.getElementById(id);
+        navigator.clipboard
+          .writeText(textarea.value)
+          .then(() => {
+            alert("Copied!");
+          })
+          .catch((err) => {
+            console.error("Failed to copy: ", err);
+            textarea.select();
+            document.execCommand("copy");
+            alert("Copied!");
+          });
+      }
+    </script>
+  </body>
+</html>

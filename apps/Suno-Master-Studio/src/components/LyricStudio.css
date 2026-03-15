@@ -1,0 +1,132 @@
+
+.studio-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card-header {
+  margin-bottom: 35px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 20px;
+}
+
+.card-header h2 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.card-header p {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}
+
+.form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group.half {
+  flex: 1 1 calc(50% - 13px);
+  min-width: 200px;
+}
+
+.form-group.full {
+  flex: 1 1 100%;
+}
+
+.form-group label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-dim);
+  font-weight: 600;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+  background: rgba(0,0,0,0.25);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 14px 18px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group textarea {
+  resize: vertical;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.merge-btn {
+  margin-top: 10px;
+  background: var(--glass-bg);
+  border: 1px dashed var(--accent-color);
+  color: var(--accent-color);
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.merge-btn:hover {
+  background: rgba(88, 166, 255, 0.1);
+  border-style: solid;
+}
+
+.final-output-wrapper {
+  position: relative;
+}
+
+.final-output {
+  width: 100%;
+  background: #000 !important;
+  border: 1px solid #30363d !important;
+  color: #3fb950 !important; /* Green output core */
+}
+
+.float-copy {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--accent-color);
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.char-counter {
+  align-self: flex-end;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  margin-top: 5px;
+}

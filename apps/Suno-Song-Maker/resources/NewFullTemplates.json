@@ -1,0 +1,434 @@
+[
+  {
+    "name": "Romantic Ghazal (Mohani Style)",
+    "bpm": "72",
+    "style": "72 BPM, Traditional Urdu Ghazal, Hasrat Mohani Style, Intimate male vocals, Sarangi Taksim, Harmonium drone, Heartbeat Tabla pulse, Pure acoustic.",
+    "structure": "[Intro: Sarangi Taksim, Harmonium drone]\n\n[Verse: intimate]\n{V1}\n\n[Instrumental: Harmonium riff]\n[Verse]\n{V2}\n\n[Chorus: Melodic peak, vocal melisma, steady Tabla]\n{CHORUS}\n\n[Instrumental Solo: Sarangi and Tabla conversation]\n\n[Verse: stripped back]\n{V3}\n\n[Breakdown: Solo acoustic Oud]\n[Verse]\n{V4}\n\n[Chorus: Full melodic intensity, vocal improvisation]\n{CHORUS}\n\n[Bridge Solo: Dramatic Sarangi, Tabla build]\n[Bridge]\n{BRIDGE}\n\n[Outro: Slow fading Sarangi, final Tabla strike]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Bollywood Cinematic Ghazal",
+    "bpm": "88",
+    "style": "88 BPM, Modern Bollywood Ghazal, Charismatic male vocals, Lush orchestral strings, Melodic flute lead, Rhythmic Tabla-Dholak, Polished production.",
+    "structure": "[Intro: String swell, Flute hook]\n\n[Verse: smooth and charismatic]\n{V1}\n\n[Instrumental: String call-and-response]\n[Verse]\n{V2}\n\n[Chorus: High-energy melodic peak, soaring strings]\n{CHORUS}\n\n[Instrumental Solo: Flute and Violin duel]\n\n[Verse]\n{V3}\n\n[Breakdown: Minimalist beat, polished vocal]\n[Verse]\n{V4}\n\n[Chorus: Final climax, layered harmonies]\n{CHORUS}\n\n[Bridge Solo: Dramatic Strings, Grand Piano]\n[Bridge]\n{BRIDGE}\n\n[Outro: Rhythmic fade, sweeping violins]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "90s Lebanese Superstar Dance",
+    "bpm": "115",
+    "style": "115 BPM, 90s Lebanese Pop, Charismatic male vocals, Nostalgic synth pads, Melodic accordion, Shami 4/4 rhythm, Funky slap bass, Vintage production.",
+    "structure": "[Intro: Synth Pad, accordion riff, 4/4 beat]\n\n[Verse]\n{V1}\n\n[Instrumental: String build-up]\n[Verse]\n{V2}\n\n[Chorus: High-energy peak, accordion hook, string stabs]\n{CHORUS}\n\n[Instrumental Solo: Accordion and Synth-String duel]\n\n[Verse: breathy]\n{V3}\n\n[Breakdown: Stripped beat, minimalist]\n[Verse]\n{V4}\n\n[Chorus: Full energy, layered backing vocals]\n{CHORUS}\n\n[Bridge Solo: Orchestral violin solo]\n[Bridge]\n{BRIDGE}\n\n[Outro: Rhythmic fade, accordion flourish]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Modern Syrian Shami Dance",
+    "bpm": "118",
+    "style": "118 BPM, Syrian Shami Dance Pop, Celebratory male vocals, Fast shaking rhythm, Mizmar accents, Melodic accordion, Heavy bass, 2026 High-fidelity.",
+    "structure": "[Intro: Mawal over Darbuka break]\n\n[Verse: happy and celebratory]\n{V1}\n\n[Instrumental: Upbeat bassline groove]\n[Verse]\n{V2}\n\n[Chorus: Shami beat drop, Mizmar hook]\n{CHORUS}\n\n[Instrumental Solo: Mizmar and Accordion duel]\n\n[Verse: joyful]\n{V3}\n\n[Breakdown: Stripped rhythmic beat]\n[Verse]\n{V4}\n\n[Chorus: Full energy peak, layered harmonies]\n{CHORUS}\n\n[Bridge Solo: String Solo leading into Mawal]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fast rhythmic fade, Mizmar flourish]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Modern Maghreb Pop",
+    "bpm": "115",
+    "style": "115 BPM, Moroccan Pop, Urban Maghreb fusion, Autotuned male vocals, Upbeat Darbuka, 808 bass rhythm, Electric Oud riffs, Global pop production.",
+    "structure": "[Intro: Modern Beat, Claps, Electric Oud]\n\n[Verse]\n{V1}\n\n[Instrumental: Syncopated percussion build-up]\n[Verse]\n{V2}\n\n[Chorus: Pop drop, heavy bass bounce]\n{CHORUS}\n\n[Instrumental Solo: Electric Oud over 808 bass]\n\n[Verse: rhythmic vocal]\n{V3}\n\n[Breakdown: Stripped beat]\n[Verse]\n{V4}\n\n[Chorus: Maximum energy, full ensemble]\n{CHORUS}\n\n[Bridge Solo: Sub-bass and Darbuka breakdown]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading beat, vocal echoes, Darbuka rolls]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Modern Saudi 6/8 Khabbaiti",
+    "bpm": "112",
+    "style": "112 BPM, Modern Saudi Pop, Khaleeji male vocals, 6/8 Khabbaiti rhythm, Heavy hand-claps, Synth keyboard arps, 808 sub-bass.",
+    "structure": "[Intro: Mawal, 6/8 Khabbaiti drum break]\n\n[Verse: Saudi dialect]\n{V1}\n\n[Instrumental: Technical Oud riff]\n[Verse]\n{V2}\n\n[Chorus: High-energy peak, multi-drum percussion, 808 pulse]\n{CHORUS}\n\n[Instrumental Solo: Synth and Electric Guitar duel]\n\n[Verse: fast-paced]\n{V3}\n\n[Breakdown: Accordion pad, Rhythmic Oud]\n[Verse]\n{V4}\n\n[Chorus: Maximum intensity, full percussion]\n{CHORUS}\n\n[Bridge Solo: Synth lead, funky guitar riff]\n[Bridge]\n{BRIDGE}\n\n[Outro: Heavy 6/8 drum hit, rhythmic claps]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Classic Khaliji 4/4 Wihda",
+    "bpm": "82",
+    "style": "82 BPM, Classic Khaliji Ballad, Soulful Saudi vocals, 4/4 Wihda rhythm, Deep Tar strikes, Nostalgic synth pads, Authentic Oud.",
+    "structure": "[Intro: Mawal, solo Oud, 4/4 Tar pulse]\n\n[Verse: soulful and nostalgic]\n{V1}\n\n[Instrumental: Oud and Violin call-and-response]\n[Verse]\n{V2}\n\n[Chorus: 4/4 drop, traditional drums, claps]\n{CHORUS}\n\n[Instrumental Solo: Accordion and Acoustic Guitar]\n\n[Verse: intimate delivery over Tar strikes]\n{V3}\n\n[Breakdown: Emotional solo vocal, Oud]\n[Verse]\n{V4}\n\n[Chorus: Maximum emotional peak, thundering percussion]\n{CHORUS}\n\n[Bridge Solo: Oud, Synth, and Guitar conversation]\n[Bridge]\n{BRIDGE}\n\n[Outro: Slow fading Oud, final Tar strike]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Modern Lebanese Dabke-Pop",
+    "bpm": "125",
+    "style": "125 BPM, Lebanese Dabke Fusion, Autotuned male vocals, Driving 4/4 beat, Heavy Tabl, Piercing Mijwiz riffs, Synth strings, Beirut nightlife vibe.",
+    "structure": "[Intro: Mijwiz and Tabl break, claps]\n\n[Verse]\n{V1}\n\n[Instrumental: Syncopated percussion build]\n[Verse]\n{V2}\n\n[Chorus: Pop drop, heavy bass bounce, synth stabs]\n{CHORUS}\n\n[Instrumental Solo: Mijwiz shredding, heavy Tabl]\n\n[Verse: rhythmic delivery and flow]\n{V3}\n\n[Breakdown: Stripped beat]\n[Verse]\n{V4}\n\n[Chorus: Full energy drop, layered harmonies]\n{CHORUS}\n\n[Bridge Solo: Mawal, Mijwiz accompaniment]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fast rhythmic fade, final Tabl hit]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Arabic Nu-Disco 2026",
+    "bpm": "122",
+    "style": "122 BPM, Arabic Nu-Disco, English vocals, 4/4 disco beat, Funky slap bass, Electric Oud riffs, Sharp Arabic strings, 2026 High-fidelity.",
+    "structure": "[Intro: Electric Oud solo, disco beat]\n\n[Verse]\n{V1}\n\n[Instrumental: Pulsing bassline groove]\n[Verse]\n{V2}\n\n[Chorus: Arabic string stabs, disco synths, 4/4 kick]\n{CHORUS}\n\n[Instrumental Solo: Slap Bass and Electric Oud interplay]\n\n[Verse: stripped back groove]\n{V3}\n\n[Breakdown: Bass and vocal focus]\n[Verse]\n{V4}\n\n[Chorus: Full disco groove, soaring strings]\n{CHORUS}\n\n[Bridge Solo: Orchestral Breakdown, Darbuka roll]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fade with synths, Oud flourish]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Authentic Qawwali (Raw Sufi)",
+    "bpm": "110",
+    "style": "110 BPM, Traditional Sufi Qawwali, Raw powerful male vocals, Intense rhythmic claps, Fast Tabla, Aggressive Harmonium, Folk South Asian.",
+    "structure": "[Intro: Frantic Harmonium, rapid Tabla rolls]\n\n[Verse: raw and powerful lead vocal]\n{V1}\n\n[Instrumental: Lead vs Ensemble Aalaap]\n[Verse]\n{V2}\n\n[Chorus: Explosive ensemble, rhythmic claps, heavy Tabla]\n{CHORUS}\n\n[Instrumental Solo: Aggressive Harmonium, rapid-fire Tabla]\n\n[Verse: low register solo vocal]\n{V3}\n\n[Breakdown: Building trance intensity]\n[Verse]\n{V4}\n\n[Chorus: Sufi trance intensity, rapid hand-clapping]\n{CHORUS}\n\n[Bridge Solo: Antiphonal duel, Lead vs Ensemble]\n[Bridge]\n{BRIDGE}\n\n[Outro: Harmonium drone, sudden rhythmic stop]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Modern Maghreb Rai-Trap",
+    "bpm": "145",
+    "style": "145 BPM, Modern Rai Trap Fusion, Autotuned male vocals, Oran style, Aggressive 808 bass slides, Accordion riffs, Fast Darbuka rolls, Urban Maghreb.",
+    "structure": "[Intro: Stuttering Synth, Accordion, trap hats]\n\n[Verse]\n{V1}\n\n[Instrumental: 808 bass slides]\n[Verse]\n{V2}\n\n[Chorus: Heavy 808 Drop, frantic Darbuka, Rai hook]\n{CHORUS}\n\n[Instrumental Solo: Accordion, electronic filter sweep]\n\n[Verse: rhythmic rap-style Rai delivery]\n{V3}\n\n[Breakdown: Minimal pulsing beat]\n[Verse]\n{V4}\n\n[Chorus: Peak energy, trap-Darbuka fusion]\n{CHORUS}\n\n[Bridge Solo: Darbuka roll, heavy sub-bass]\n[Bridge]\n{BRIDGE}\n\n[Outro: Accordion flourish, fading 808 pulse]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Modern Moroccan Chaabi-Dance",
+    "bpm": "108",
+    "style": "108 BPM, Moroccan Chaabi Fusion, High-energy 6/8 swing, Autotuned vocals, Aggressive accordion, Electric Oud riffs, Fast Bendir, Taarija, sharp Tzaghrit, Heavy 808 bass.",
+    "structure": "[Intro: Electric Oud riff, 6/8 Chaabi swing]\n\n[Verse: rhythmic and aggressive]\n{V1}\n\n[Instrumental: Pulsing synth pads]\n[Verse]\n{V2}\n\n[Chorus: High Energy Dance Drop, Aggressive Accordion, sharp Tzaghrit]\n{CHORUS}\n\n[Instrumental Solo: Percussion breakdown, Oud solo]\n\n[Verse: rhythmic delivery, Bendir]\n{V3}\n\n[Breakdown: Chaabi swing focus]\n[Verse]\n{V4}\n\n[Chorus: Peak Energy, layered claps]\n{CHORUS}\n\n[Bridge Solo: Intense Taarija rolls, accordion riffs]\n[Bridge]\n{BRIDGE}\n\n[Outro: Final Zaghrouta, fading Taarija]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Modern Country Ballad",
+    "bpm": "74",
+    "style": "74 BPM, Modern Country Ballad, Sincere male vocals, Nashville storytelling, Acoustic guitar, Pedal steel swells, Emotive fiddle, Polished 4/4.",
+    "structure": "[Intro: Acoustic guitar, fiddle melody]\n\n[Verse: sincere storytelling]\n{V1}\n\n[Instrumental: Soft Pedal Steel swells]\n[Verse]\n{V2}\n\n[Chorus: Country harmonies, pedal steel swells]\n{CHORUS}\n\n[Instrumental Solo: Emotional Fiddle solo, acoustic lead]\n\n[Verse: stripped back, focus on storytelling]\n{V3}\n\n[Breakdown: Minimalist acoustic guitar]\n[Verse]\n{V4}\n\n[Chorus: Full anthem, layered male harmonies]\n{CHORUS}\n\n[Bridge Solo: Cinematic pedal steel atmosphere]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading guitar, fiddle tail]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Epic Cinematic War Anthem",
+    "bpm": "120",
+    "style": "120 BPM, Cinematic War Anthem, Maqam Hijaz, Anguished powerful male vocals, Massive choir, Blasting brass, War drums, Staccato strings, Qanoon tremolos.",
+    "structure": "[Intro: War Drums, Brass groans, ominous strings]\n\n[Verse: anguished and powerful]\n{V1}\n\n[Instrumental: Intense Qanoon tremolos]\n[Verse]\n{V2}\n\n[Chorus: Choir and Brass explosion, Cinematic Climax]\n{CHORUS}\n\n[Instrumental Solo: Staccato strings, Taiko build]\n\n[Verse: tragic solo vocal]\n{V3}\n\n[Breakdown: Low brass drone, building tension]\n[Verse]\n{V4}\n\n[Chorus: Full intensity anthem, maximum choir volume]\n{CHORUS}\n\n[Bridge Solo: Orchestral build, aggressive chanting, brass]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading War Drums, mournful Ney flute]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Cyberpunk Neon Legend",
+    "bpm": "115",
+    "style": "115 BPM, Synthwave, Darksynth, Autotuned polished pop vocals, Arpeggiated Moog bass, Analog synths, Gritty distorted textures, Retro-future atmosphere.",
+    "structure": "[Intro: Static glitch, Moog bass, neon pads]\n\n[Verse: gritty and melodic]\n{V1}\n\n[Instrumental: Distant synth echoes]\n[Verse]\n{V2}\n\n[Chorus: Synth-wave beat, neon lead synth]\n{CHORUS}\n\n[Instrumental Solo: Soaring Analog Synth, reverb and delay]\n\n[Verse: robotic delivery over digital pulse]\n{V3}\n\n[Breakdown: Glitchy textures, cold pulse]\n[Verse]\n{V4}\n\n[Chorus: Maximum intensity, electronic percussion]\n{CHORUS}\n\n[Bridge Solo: Atmospheric breakdown, filtered build]\n[Bridge]\n{BRIDGE}\n\n[Outro: Rhythmic heartbeat pulse, digital fade]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Afro-Beat Fusion",
+    "bpm": "118",
+    "style": "118 BPM, Modern Nigerian Afrobeat, Groovy slap bass, Rhythmic high-life guitar, Mbalax guitar plucking, Shimmering percussion, 2026 Production.",
+    "structure": "[Intro: Interlocking electric guitars, soft shaker]\n\n[Verse]\n{V1}\n\n[Instrumental: Driving slap bass enters]\n[Verse]\n{V2}\n\n[Chorus: Nigerian groove, syncopated rhythm]\n{CHORUS}\n\n[Instrumental Solo: Talking drums, groovy guitar duel]\n\n[Verse: guitar-centric rhythmic delivery]\n{V3}\n\n[Breakdown: Light percussion focus]\n[Verse]\n{V4}\n\n[Chorus: Maximum dance energy, stadium vibe]\n{CHORUS}\n\n[Bridge Solo: Shaker and percussion build, bass solo]\n[Bridge]\n{BRIDGE}\n\n[Outro: Guitar riff continues alone, final shaker hit]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Modern Saudi Romance",
+    "bpm": "92",
+    "style": "92 BPM, Modern Khaleeji Pop, Maqam Hijaz, Intimate male vocals, Bedouin accent, Elegant Oud, Orchestral strings, Smooth percussion, Romantic.",
+    "structure": "[Intro: Soulful Oud solo, string pads]\n\n[Verse: intimate, Bedouin accent]\n{V1}\n\n[Instrumental: Soft acoustic Oud riffs]\n[Verse]\n{V2}\n\n[Chorus: Emotional peak, soaring violins]\n{CHORUS}\n\n[Instrumental Solo: Cinematic strings, technical Oud]\n\n[Verse: minimalist Oud and vocals]\n{V3}\n\n[Breakdown: Soulful and intimate focus]\n[Verse]\n{V4}\n\n[Chorus: Full orchestral layers, maximum intensity]\n{CHORUS}\n\n[Bridge Solo: Warm string swell, soft build]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading Oud melody, soft synth pads]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Light Saudi Romance",
+    "bpm": "88",
+    "style": "88 BPM, 90s Khaleeji Pop, Soulful Saudi male vocals, Poetic articulation, Deep acoustic Oud, String orchestra swells, Steady 4/4 Wihda rhythm.",
+    "structure": "[Intro: Soulful Oud Taksim, violin swells, Wihda]\n\n[Verse: poetic, clear articulation]\n{V1}\n\n[Instrumental: Violin and Oud call-and-response]\n[Verse]\n{V2}\n\n[Chorus: Anthemic, soaring strings]\n{CHORUS}\n\n[Instrumental Solo: Emotional Oud, string backing]\n\n[Verse: soft vocals over solo Oud]\n{V3}\n\n[Breakdown: Poetic focus]\n[Verse]\n{V4}\n\n[Chorus: Maximum grandeur, full orchestra]\n{CHORUS}\n\n[Bridge Solo: String breakdown, vocal melisma]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading Oud melody, final percussion strike]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Drama Kuwaiti Romance",
+    "bpm": "82",
+    "style": "82 BPM, Classic Khaleeji Rumba Ballad, Emotional smooth male vocals, Saudi dialect, 4/4 Wihda-Rumba rhythm, Deep Tar strikes, Lush strings, Authentic Oud.",
+    "structure": "[Intro: Soulful Oud melody over 4/4 Tar pulse]\n\n[Verse: emotional and smooth]\n{V1}\n\n[Instrumental: Cello and Oud interplay]\n[Verse]\n{V2}\n\n[Chorus: Melodic peak, swelling strings]\n{CHORUS}\n\n[Instrumental Solo: Rhythmic interlude, Darbuka accents]\n\n[Verse: stripped emotional solo vocal]\n{V3}\n\n[Breakdown: Focus on acoustic Oud]\n[Verse]\n{V4}\n\n[Chorus: Full arrangement, thundering percussion]\n{CHORUS}\n\n[Bridge Solo: Building Tar pulse, lush strings]\n[Bridge]\n{BRIDGE}\n\n[Outro: Slow fading Oud, final Tar strike]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Modern Maghreb Urban",
+    "bpm": "128",
+    "style": "128 BPM, Moroccan Urban Pop, Powerful celebratory male vocals, Heavy bass, Modern synths, Bendir, Darbuka, Festive claps, Stadium chant style.",
+    "structure": "[Intro: Bendir and electronic build-up, crowd cheering]\n\n[Verse]\n{V1}\n\n[Instrumental: Rapid Darbuka accents]\n[Verse]\n{V2}\n\n[Chorus: Stadium Chant Style, heavy bass, claps]\n{CHORUS}\n\n[Instrumental Solo: Moroccan Ghaita over high-energy beat]\n\n[Verse: percussion focus with crowd chanting]\n{V3}\n\n[Breakdown: Rhythmic vocal delivery]\n[Verse]\n{V4}\n\n[Chorus: Full energy explosion, stadium chants]\n{CHORUS}\n\n[Bridge Solo: Atmospheric synth transition, rhythmic clapping]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading percussion, final stadium chant tail]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Modern Maghreb Fusion",
+    "bpm": "105",
+    "style": "105 BPM, Gnawa Fusion, Deep House, Autotuned Arabic vocals, Sintir bassline, House kick, Polyrhythmic 12/8 Qraqeb, Synth atmosphere.",
+    "structure": "[Intro: Deep Sintir, Qraqeb over house atmosphere]\n\n[Verse]\n{V1}\n\n[Instrumental: Synth atmosphere enters]\n[Verse]\n{V2}\n\n[Chorus: Deep House kick merges with Gnawa rhythm]\n{CHORUS}\n\n[Instrumental Solo: Rhythmic clapping, solo Sintir riff]\n\n[Verse: hypnotic Sintir, rhythmic chanting]\n{V3}\n\n[Breakdown: Minimalist house pulse]\n[Verse]\n{V4}\n\n[Chorus: Maximum fusion intensity, house groove peak]\n{CHORUS}\n\n[Bridge Solo: Building Qraqeb layers, heavy house kick]\n[Bridge]\n{BRIDGE}\n\n[Outro: Sintir and kick drum outro fading]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Arabic Jazz Fusion",
+    "bpm": "90",
+    "style": "90 BPM, Arabic Jazz Fusion, Intimate male vocals, Walking bassline, Syncopated rhythms, Oud, Saxophone, Acoustic textures, Soft jazz drums.",
+    "structure": "[Intro: Smooth walking bass, Oud riff, soft drums]\n\n[Verse: intimate and soulful]\n{V1}\n\n[Instrumental: Soft cymbal brushes]\n[Verse]\n{V2}\n\n[Chorus: Saxophone swells, syncopated rhythms]\n{CHORUS}\n\n[Instrumental Solo: Jazz Saxophone, Arabic scales]\n\n[Verse: intimate vocal over double bass and Oud]\n{V3}\n\n[Breakdown: Soft jazz atmosphere]\n[Verse]\n{V4}\n\n[Chorus: Full jazz ensemble, rich harmonies]\n{CHORUS}\n\n[Bridge Solo: Piano and Saxophone call-and-response]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading Saxophone, final Oud note]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Modern Neo-Tarab Fusion",
+    "bpm": "95",
+    "style": "95 BPM, Arabic Pop, Turkish Arabesque Fusion, Maqam Hijaz, Deep emotive vocals, Emotional accordion, Electric Oud, Lush synth pads, Hybrid percussion.",
+    "structure": "[Intro: Intimate Accordion, cinematic Synth pads]\n\n[Verse: deep and emotive]\n{V1}\n\n[Instrumental: Electric Oud riffs]\n[Verse]\n{V2}\n\n[Chorus: High-energy Arabic Pop, Powerful Vocals]\n{CHORUS}\n\n[Instrumental Solo: Melancholic Accordion, building strings]\n\n[Verse: intimate delivery over accordion pad]\n{V3}\n\n[Breakdown: Synth and vocal focus]\n[Verse]\n{V4}\n\n[Chorus: Full Energy Climax, hybrid percussion]\n{CHORUS}\n\n[Bridge Solo: Building string section, heavy sub bass]\n[Bridge]\n{BRIDGE}\n\n[Outro: Ambient Synth fade, echoing Accordion]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Moroccan Malhun Heritage",
+    "bpm": "76",
+    "style": "76 BPM, Authentic Moroccan Malhun, Maqam Rast, Narrative melismatic vocals, Solo Oud, Qanoon tremolos, Moroccan violin, Bendir, Taarija.",
+    "structure": "[Intro: Long solo Oud Taksim, gentle Bendir entrance]\n\n[Verse: narrative and melismatic]\n{V1}\n\n[Instrumental: Intricate Qanoon trills]\n[Verse]\n{V2}\n\n[Chorus: Melodic refrain, group backing, weeping Violin]\n{CHORUS}\n\n[Instrumental Solo: Dramatic strings, Qanoon and Oud solo]\n\n[Verse: soft solo vocal over violin drone]\n{V3}\n\n[Breakdown: Minimal Oud focus]\n[Verse]\n{V4}\n\n[Chorus: Full ensemble energy, rhythmic and soulful]\n{CHORUS}\n\n[Bridge Solo: Building rhythmic Taarija pulse]\n[Bridge]\n{BRIDGE}\n\n[Outro: Final Oud notes, final Taarija strike]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Andalusian Zajal",
+    "bpm": "82",
+    "style": "82 BPM, Traditional Moroccan Andalusian Zajal, Maqam Hijaz, Group chanting, Acoustic Oud, Qanoon, Moroccan violin, Bendir, Darbuka, Soulful.",
+    "structure": "[Intro: Melancholic Violin and Oud Taksim, Darbuka]\n\n[Verse: traditional and soulful]\n{V1}\n\n[Instrumental: Soft rhythmic percussion]\n[Verse]\n{V2}\n\n[Chorus: Group Vocal Chanting, Orchestral strings swelling]\n{CHORUS}\n\n[Instrumental Solo: Dramatic Violin Solo, heavy Bendir]\n\n[Verse: soft vocal over solo Oud and Bendir pulse]\n{V3}\n\n[Breakdown: Focus on melodic delivery]\n[Verse]\n{V4}\n\n[Chorus: Full Energy Ensemble, resonant Bendir]\n{CHORUS}\n\n[Bridge Solo: Building Bendir strikes, violin ensemble]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading Oud and Violin]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Metropolitan Solitude",
+    "bpm": "92",
+    "style": "92 BPM, Cinematic Synthwave, Cyberpunk vibe, Reverb male vocals, Moog bass, Pulsing DX7 synths, Urban melancholy, Hazy dreamy textures.",
+    "structure": "[Intro: City noise, subway jingle, low pulsing synth]\n\n[Verse: urban melancholy]\n{V1}\n\n[Instrumental: Vocal effects build]\n[Verse]\n{V2}\n\n[Chorus: Synth-wave beat, neon lead synth]\n{CHORUS}\n\n[Instrumental Solo: Dramatic breakdown, strings and synths]\n\n[Verse: hazy dreamy vocal over Moog pulse]\n{V3}\n\n[Breakdown: Focus on soft pads]\n[Verse]\n{V4}\n\n[Chorus: Maximum Intensity Neon Riot, driving beat]\n{CHORUS}\n\n[Bridge Solo: Heavy pulsing DX7 synths, rhythmic bass pulse]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading subway train pulse, digital glitch]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Minimalist Narrative Ballad",
+    "bpm": "65",
+    "style": "65 BPM, Egyptian Narrative Ballad, Clean male vocals, No adlibs, Minimalist piano, Simple melody, Steady rhythmic pulse, Intimate.",
+    "structure": "[Intro: Simple rhythmic piano, intimate atmosphere]\n\n[Verse: clean and straightforward]\n{V1}\n\n[Instrumental: Steady piano rhythm]\n[Verse]\n{V2}\n\n[Chorus: Steady vocal, no ad-libs, clean delivery]\n{CHORUS}\n\n[Instrumental Solo: Quiet focus on piano melody]\n\n[Verse: softest piano, whispered storytelling]\n{V3}\n\n[Breakdown: Focus on narrative clarity]\n[Verse]\n{V4}\n\n[Chorus: Final steady delivery, clean piano climax]\n{CHORUS}\n\n[Bridge Solo: Slight melodic variation in piano]\n[Bridge]\n{BRIDGE}\n\n[Outro: Sudden clean stop on single piano note]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Minimalist Sawt",
+    "bpm": "80",
+    "style": "80 BPM, Traditional Kuwaiti Sawt, Raw intimate vocals, Sparse Oud, Solo accordion, Nylon guitar, Minimalist synth, Room acoustic vibe.",
+    "structure": "[Intro: Oud Taksim solo, melancholic and acoustic]\n\n[Verse: raw and intimate]\n{V1}\n\n[Instrumental: Soft Synth atmosphere enters]\n[Verse]\n{V2}\n\n[Chorus: Accordion and Guitar entrance, traditional rhythm]\n{CHORUS}\n\n[Instrumental Solo: Technical Oud and Guitar interplay]\n\n[Verse: storytelling over solo Oud Taksim]\n{V3}\n\n[Breakdown: Stripped back acoustic focus]\n[Verse]\n{V4}\n\n[Chorus: Maximum energy traditional climax]\n{CHORUS}\n\n[Bridge Solo: Steady Accordion, rising Synth intensity]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading Oud, final soft Guitar chord]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Modern Arabic Pop",
+    "bpm": "115",
+    "style": "115 BPM, Modern Arabic Pop, Autotuned male vocals, Explosive pop beat, Heavy Darbuka accents, Modern synth riffs, Catchy chorus hook.",
+    "structure": "[Intro: Rhythmic Darbuka build, bright synth riff]\n\n[Verse]\n{V1}\n\n[Instrumental: Pulsing synth bass]\n[Verse]\n{V2}\n\n[Chorus: Explosive pop beat, Darbuka accents, synth hook]\n{CHORUS}\n\n[Instrumental Solo: Atmospheric synth breakdown, Darbuka roll]\n\n[Verse: percussion-led focus, melodic delivery]\n{V3}\n\n[Breakdown: Minimalist synth focus]\n[Verse]\n{V4}\n\n[Chorus: Maximum energy climax, layered harmonies]\n{CHORUS}\n\n[Bridge Solo: Building synth layers, drum fills]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading synth melody, final sharp Darbuka hit]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Latin-Raï Arena Rock",
+    "bpm": "126",
+    "style": "126 BPM, Latin-Raï Arena Rock, Overdriven lead guitar, Hammond B3 organ swells, Heavy congas, Epic stadium rock, Lush strings, High-energy.",
+    "structure": "[Intro: Melodic electric guitar, organ swells]\n\n[Verse: Raï-style guitar licks]\n{V1}\n\n[Instrumental: Rhythmic guitar strums]\n[Verse]\n{V2}\n\n[Chorus: Huge uplifting layers, congas, stadium scale]\n{CHORUS}\n\n[Instrumental Solo: Soaring expressive guitar solo]\n\n[Verse: building tension, handclaps]\n{V3}\n\n[Breakdown: Stripped back guitar and vocals]\n[Verse]\n{V4}\n\n[Chorus: Maximum energy explosion, stadium crowd noise]\n{CHORUS}\n\n[Bridge Solo: Heavy conga rhythm, soaring strings]\n[Bridge]\n{BRIDGE}\n\n[Outro: Layered vocals fading, Ghaita solo]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Santana Dramatic Rock",
+    "bpm": "115",
+    "style": "115 BPM, Latin Rock, Carlos Santana style, Overdriven guitar solos, Afro-Cuban rhythms, Salsa beat, Congas, Timbales, Hammond B3 swells.",
+    "structure": "[Intro: Santana guitar solo, Latin percussion]\n\n[Verse: soulful and melodic]\n{V1}\n\n[Instrumental: Salsa beat kicks in]\n[Verse]\n{V2}\n\n[Chorus: Rhythmic and danceable, organ swells]\n{CHORUS}\n\n[Instrumental Solo: Hammond B3 and congas breakdown]\n\n[Verse: warm overdrive guitar stabs]\n{V3}\n\n[Breakdown: Focus on soulful delivery]\n[Verse]\n{V4}\n\n[Chorus: Maximum rock energy, soaring guitar solo]\n{CHORUS}\n\n[Bridge Solo: Heavy timbales solo, building guitar energy]\n[Bridge]\n{BRIDGE}\n\n[Outro: Extended guitar solo, rhythmic Latin chanting]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Tokyo Synth Night",
+    "bpm": "124",
+    "style": "124 BPM, Melodic Techno, Future Garage, Glitchy vocal chops, Deep pulsing bass, Electronic percussion, Atmospheric synth, City soundscapes.",
+    "structure": "[Intro: Subway door beeps, fast kick, pulsing bass]\n\n[Verse: nightlife atmosphere]\n{V1}\n\n[Instrumental: Hi-hat rolls enter]\n[Verse]\n{V2}\n\n[Chorus: High energy Dance Drop, synth energy, vocal chops]\n{CHORUS}\n\n[Instrumental Solo: Deep ambient breakdown, vocal ad-libs]\n\n[Verse: rhythmic vocal delivery and flow]\n{V3}\n\n[Breakdown: Minimalist beat focus]\n[Verse]\n{V4}\n\n[Chorus: Maximum intensity, heavy bass, layered harmonies]\n{CHORUS}\n\n[Bridge Solo: Deep melodic synth lead, heavy kick focus]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fast rhythmic fade-out, departing train sound]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Shajan Cello Ballad",
+    "bpm": "65",
+    "style": "65 BPM, Modern Arabic Shajan Ballad, Ethereal melismatic female vocals, Emotional piano, Mournful Middle Eastern cello, Orchestral swells, Tragic.",
+    "structure": "[Intro: Cinematic piano, deep weeping Arabic cello]\n\n[Verse: melismatic and emotional]\n{V1}\n\n[Instrumental: Piano becomes minimal]\n[Verse]\n{V2}\n\n[Chorus: Orchestra swells, soaring cello, epic strikes]\n{CHORUS}\n\n[Instrumental Solo: Orchestral Build, ethereal vocalizing]\n\n[Verse: fragile and intimate broken vocal]\n{V3}\n\n[Breakdown: Lonely cello focus]\n[Verse]\n{V4}\n\n[Chorus: Full orchestral arrangement, peak intensity]\n{CHORUS}\n\n[Bridge Solo: Lush strings building, vocal tension]\n[Bridge]\n{BRIDGE}\n\n[Outro: Soft piano chords, last mournful cello slide]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Flamenco-Latin Pop",
+    "bpm": "112",
+    "style": "112 BPM, Andalusian Flamenco, Latin Pop Fusion, Passionate vocals, Spanish guitar rasgueado, Hand claps, Reggaeton dembow beat, Staccato strums.",
+    "structure": "[Intro: Fast Spanish guitar rasgueado, hand claps]\n\n[Verse: passionate and upbeat]\n{V1}\n\n[Instrumental: Steady dance flow]\n[Verse]\n{V2}\n\n[Chorus: Dembow beat kicks in, powerful vocals]\n{CHORUS}\n\n[Instrumental Solo: Guitar solo, rhythmic footwork sounds]\n\n[Verse: fast rhythmic vocal delivery]\n{V3}\n\n[Breakdown: Stripped back guitar and claps]\n[Verse]\n{V4}\n\n[Chorus: Full energy climax, heavy dembow rhythm]\n{CHORUS}\n\n[Bridge Solo: Building percussion, intense Palmas]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading guitar, final celebratory ad-libs]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "French Rap / Hip-Hop",
+    "bpm": "140",
+    "style": "140 BPM, French Drill, Dark cinematic strings, Gritty aggressive vocals, Heavy bass drop, Stuttering hi-hats, Eerie synth pads, Urban atmosphere.",
+    "structure": "[Intro: Eerie strings, drill hi-hats]\n\n[Verse: gritty and aggressive]\n{V1}\n\n[Instrumental: Drill hi-hats continue]\n[Verse]\n{V2}\n\n[Chorus: Aggressive delivery, bass drop, dark string hook]\n{CHORUS}\n\n[Instrumental Solo: String breakdown, vocal echoes]\n\n[Verse: dark storytelling flow, string drone]\n{V3}\n\n[Breakdown: Minimalist beat focus]\n[Verse]\n{V4}\n\n[Chorus: Maximum drill energy, full cinematic ensemble]\n{CHORUS}\n\n[Bridge Solo: 808 slides, building tension, dark pads]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading drill beat, final dark note]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Global Pop Hit",
+    "bpm": "105",
+    "style": "105 BPM, Global Pop Ballad, Modern polished male vocals, Lush harmonies, Clean acoustic guitar, Soft synth pads, Electronic percussion, 2026 High-fidelity.",
+    "structure": "[Intro: Warm acoustic guitar, soft synth pads building]\n\n[Verse: heartfelt and sincere]\n{V1}\n\n[Instrumental: Subtle electronic percussion enters]\n[Verse]\n{V2}\n\n[Chorus: Catchy melodic hook, layered harmonies]\n{CHORUS}\n\n[Instrumental Solo: Music swells then drops for raw vocal]\n\n[Verse: intimate acoustic guitar focus]\n{V3}\n\n[Breakdown: Sincere delivery]\n[Verse]\n{V4}\n\n[Chorus: Full energy explosion, anthemic hook celebration]\n{CHORUS}\n\n[Bridge Solo: Building synth texture, steady pop beat]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading guitar, soft whispers, final vocal line]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Classical Ottoman Suite",
+    "bpm": "72",
+    "style": "72 BPM, Classical Turkish Makam, Maqam Saba, Emotive vocals, Acoustic Qanoon, Traditional Ney flute, Emotional Oud, Orchestral strings, Bendir.",
+    "structure": "[Intro: Melancholic Ney, solo Qanoon Taksim]\n\n[Verse: emotive and soulful]\n{V1}\n\n[Instrumental: Focus on Ney and Oud]\n[Verse]\n{V2}\n\n[Chorus: Orchestral strings, emotive vocals, Qanoon tremolos]\n{CHORUS}\n\n[Instrumental Solo: Dramatic strings, technical Qanoon Solo]\n\n[Verse: mournful solo vocal with Ney accompaniment]\n{V3}\n\n[Breakdown: Soft drone focus]\n[Verse]\n{V4}\n\n[Chorus: Full energy climax, rhythmic Bendir, Oud]\n{CHORUS}\n\n[Bridge Solo: Building string section, Bendir enters]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading Qanoon, final Ney notes]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Clean Acoustic Story",
+    "bpm": "72",
+    "style": "72 BPM, Egyptian Folk Story, Raw steady vocals, Clear articulation, Solo acoustic guitar strumming, No adlibs, No vibrato, Raw room vibe.",
+    "structure": "[Intro: Simple rhythmic guitar strumming, intimate vibe]\n\n[Verse: direct vocal delivery]\n{V1}\n\n[Instrumental: Continuation of steady strumming]\n[Verse]\n{V2}\n\n[Chorus: Clean vocal, focus on lyrics, steady strumming]\n{CHORUS}\n\n[Instrumental Solo: Simple melodic guitar solo, raw tone]\n\n[Verse: intimate storytelling tone, near-whisper]\n{V3}\n\n[Breakdown: Softening guitar intensity]\n[Verse]\n{V4}\n\n[Chorus: Final steady delivery, maximum clarity]\n{CHORUS}\n\n[Bridge Solo: Arpeggiated guitar, emotional vocal delivery]\n[Bridge]\n{BRIDGE}\n\n[Outro: Final soft guitar chord, sudden clean stop]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Cyberpunk Neon (Wongfong)",
+    "bpm": "115",
+    "style": "115 BPM, Synthwave, Cyberpunk, Autotuned vocals, Arpeggiated Moog bass, Analog synths, Gritty melodies, Retro-future atmosphere, Digital glitch.",
+    "structure": "[Intro: Static glitch, arpeggiated Moog bass, neon pads]\n\n[Verse: gritty and autotuned]\n{V1}\n\n[Instrumental: Digital glitch enters]\n[Verse]\n{V2}\n\n[Chorus: High-energy synth-wave beat, neon lead synth]\n{CHORUS}\n\n[Instrumental Solo: Atmospheric vocal solo, reverb, drum fills]\n\n[Verse: robotic vocal delivery over digital pulse]\n{V3}\n\n[Breakdown: Glitchy textures focus]\n[Verse]\n{V4}\n\n[Chorus: Maximum intensity, layered electronic percussion]\n{CHORUS}\n\n[Bridge Solo: Heavy distorted bass, industrial synth layers]\n[Bridge]\n{BRIDGE}\n\n[Outro: Rhythmic heartbeat pulse, digital fade]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Ain Jalut Score",
+    "bpm": "92",
+    "style": "92 BPM, Middle Eastern Cinematic, War Score, Mournful Ney, War drums, Galloping percussion, Orchestral brass, Heavy Timpani, Historical tragedy.",
+    "structure": "[Intro: Desert wind, haunting Ney flute, cello drone]\n\n[Verse: somber and historical]\n{V1}\n\n[Instrumental: Rhythmic war drum pulses]\n[Verse]\n{V2}\n\n[Chorus: Battle: Massive brass, thundering Timpani]\n{CHORUS}\n\n[Instrumental Solo: Orchestral breakdown, choir hum, violin]\n\n[Verse: somber brass and Ney focus]\n{V3}\n\n[Breakdown: Reflective historical tone]\n[Verse]\n{V4}\n\n[Chorus: Battle Reprise: Full battle intensity]\n{CHORUS}\n\n[Bridge Solo: Intense strings and brass, galloping rhythm]\n[Bridge]\n{BRIDGE}\n\n[Outro: Music fades to single Ney note, desert wind]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Anfield Stadium Anthem",
+    "bpm": "90",
+    "style": "90 BPM, Cinematic Stadium Rock, Powerful choral harmonies, Emotional piano, Uplifting strings, Soaring electric guitar, Booming percussion, Triumphant.",
+    "structure": "[Intro: Solemn Piano and distant crowd hum]\n\n[Verse: solemn and steady]\n{V1}\n\n[Instrumental: Steady piano chords]\n[Verse]\n{V2}\n\n[Chorus: Explosive Stadium Anthem, layered harmonies]\n{CHORUS}\n\n[Instrumental Solo: String transition, soaring guitar solo]\n\n[Verse: raw vocals over rhythmic floor toms]\n{V3}\n\n[Breakdown: Focus on vocal intensity]\n[Verse]\n{V4}\n\n[Chorus: Maximum climax, full choir and rock ensemble]\n{CHORUS}\n\n[Bridge Solo: Building guitar feedback, rising choral intensity]\n[Bridge]\n{BRIDGE}\n\n[Outro: Final Triumphant Chord with crowd noise]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Arabic Folk Ballad",
+    "bpm": "75",
+    "style": "75 BPM, Arabic Folk Ballad, Maqam Hijaz, Emotive male vocals, Yemeni Oud, Mournful Ney, Yemeni percussion, Orchestral strings, Patriotic atmosphere.",
+    "structure": "[Intro: Mournful Ney and Oud over orchestral drone]\n\n[Verse: deep and emotive]\n{V1}\n\n[Instrumental: Focus on solo Oud]\n[Verse]\n{V2}\n\n[Chorus: Orchestral strings, traditional percussion entrance]\n{CHORUS}\n\n[Instrumental Solo: Oud and strings, tragic atmosphere]\n\n[Verse: intimate vocal over soft Ney and Oud]\n{V3}\n\n[Breakdown: Soulful patriotic focus]\n[Verse]\n{V4}\n\n[Chorus: Full patriotic intensity, orchestral swell]\n{CHORUS}\n\n[Bridge Solo: Building string tension, traditional rhythm]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading Oud, final Ney note, silence]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Qawwali Muqabla",
+    "bpm": "115",
+    "style": "115 BPM, High-energy Qawwali Muqabla, Group ensemble vocals, Call and response, Rhythmic Tabla, Percussive hand-claps, Loud harmonium riffs.",
+    "structure": "[Intro: Fast Harmonium riff, rapid Tabla, rhythmic claps]\n\n[Verse: rhythmic and energetic]\n{V1}\n\n[Instrumental: Rhythmic Tabla intensifies]\n[Verse]\n{V2}\n\n[Chorus: All Voices, Group Harmony, Heavy Clapping]\n{CHORUS}\n\n[Instrumental Solo: Call and Response Antiphony]\n\n[Verse: solo lead building back to high energy]\n{V3}\n\n[Breakdown: Harmonium swells focus]\n[Verse]\n{V4}\n\n[Chorus: Maximum ensemble intensity, frantic handclaps]\n{CHORUS}\n\n[Bridge Solo: Increasing harmonium speed, constant claps]\n[Bridge]\n{BRIDGE}\n\n[Outro: Group Harmony, final heavy Tabla, collective shout]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Raw Punjabi Muqabla",
+    "bpm": "165",
+    "style": "165 BPM, Punjabi Qawwali, Raw earthy male ensemble, High-energy antiphony, High-tempo harmonium, Thundering Tabla, Relentless hand-clapping.",
+    "structure": "[Intro: Extreme high-tempo Harmonium, immediate claps]\n\n[Verse: raw and relentless]\n{V1}\n\n[Instrumental: Relentless Tabla rhythm]\n[Verse]\n{V2}\n\n[Chorus: High-energy ensemble shout, frantic harmonium]\n{CHORUS}\n\n[Instrumental Solo: Intense Antiphonal Muqabla]\n\n[Verse: fast-paced solo building to climax]\n{V3}\n\n[Breakdown: Harmonium and Tabla focus]\n[Verse]\n{V4}\n\n[Chorus: Maximum energy peak, group harmony, climax]\n{CHORUS}\n\n[Bridge Solo: Increased clapping, thundering harmonium]\n[Bridge]\n{BRIDGE}\n\n[Outro: Final rapid Tabla roll, collective shout]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Retro Beirut Jazz 1960s",
+    "bpm": "110",
+    "style": "110 BPM, 1960s Beirut Retro Jazz, Elegant female vocals, Smooth bossa nova, Brass section, Double bass, Saxophone solo, Nostalgic piano.",
+    "structure": "[Intro: Smooth Saxophone, nostalgic Piano, bossa beat]\n\n[Verse: elegant and nostalgic]\n{V1}\n\n[Instrumental: Walking bassline enters]\n[Verse]\n{V2}\n\n[Chorus: Catchy Brass Hook and Jazzy Piano melody]\n{CHORUS}\n\n[Instrumental Solo: Elegant Double Bass and Piano flourish]\n\n[Verse: intimate piano and vocal only]\n{V3}\n\n[Breakdown: Nostalgic cinematic tone]\n[Verse]\n{V4}\n\n[Chorus: Full brass and vocal ensemble peak]\n{CHORUS}\n\n[Bridge Solo: Building brass section, bossa nova swing]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading Jazz Ensemble, final saxophone note]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Romantic Orchestral Suite",
+    "bpm": "72",
+    "style": "72 BPM, Romantic Arabic Ballad, Soulful solo vocals, Grand piano, Lush orchestral strings, Warm acoustic guitar, Cinematic, Melancholic.",
+    "structure": "[Intro: Soft Piano melody, gentle acoustic guitar]\n\n[Verse: soulful and melancholic]\n{V1}\n\n[Instrumental: Soft piano background]\n[Verse]\n{V2}\n\n[Chorus: Orchestral strings swelling, emotive vocals]\n{CHORUS}\n\n[Instrumental Solo: Cinematic string solo and piano]\n\n[Verse: intimate solo piano and vocal]\n{V3}\n\n[Breakdown: Minimalist orchestral drone]\n[Verse]\n{V4}\n\n[Chorus: Maximum emotional climax, soaring vocals]\n{CHORUS}\n\n[Bridge Solo: Rising string pads, building tension]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading strings and piano, atmospheric silence]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Saharan Gnawa-Blues",
+    "bpm": "105",
+    "style": "105 BPM, Gnawa Desert Blues, Soulful desert guitar, Deep hypnotic Guembri bass, Metallic Qraqeb percussion, Call-and-response vocals, Trance groove.",
+    "structure": "[Intro: Solo hypnotic Guembri Bassline enters]\n\n[Verse: soulful and bluesy]\n{V1}\n\n[Instrumental: Desert blues guitar riffs]\n[Verse]\n{V2}\n\n[Chorus: Rhythmic Metallic Qraqeb, heavy trance groove]\n{CHORUS}\n\n[Instrumental Solo: Psychedelic Desert Guitar Solo]\n\n[Verse: call-and-response vocals over Guembri]\n{V3}\n\n[Breakdown: Focus on trance rhythm]\n[Verse]\n{V4}\n\n[Chorus: Maximum rhythmic energy, fusion climax]\n{CHORUS}\n\n[Bridge Solo: Building Qraqeb, hypnotic Guembri pulse]\n[Bridge]\n{BRIDGE}\n\n[Outro: Hypnotic fading rhythm, final vocal chant]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "British-Asian Qawwali",
+    "bpm": "105",
+    "style": "105 BPM, Smooth Acoustic Qawwali, Velvety male lead, Ensemble chorus, Vocal harmonies, Harmonium, Heartbeat Tabla, Rhythmic hand-clapping.",
+    "structure": "[Intro: Harmonium melody, heartbeat Tabla, soft drone]\n\n[Verse: velvety and smooth]\n{V1}\n\n[Instrumental: Rhythmic Tabla continues]\n[Verse]\n{V2}\n\n[Chorus: Group Harmony, Rhythmic Handclapping]\n{CHORUS}\n\n[Instrumental Solo: Rapid Call and Response Antiphony]\n\n[Verse: intimate solo vocal over tabla pulse]\n{V3}\n\n[Breakdown: Soft harmonium focus]\n[Verse]\n{V4}\n\n[Chorus: Maximum ensemble intensity, full harmony]\n{CHORUS}\n\n[Bridge Solo: Building harmonium swells, group claps]\n[Bridge]\n{BRIDGE}\n\n[Outro: Group Harmony fading, Harmonium drone]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Steady Drama Ballad",
+    "bpm": "65",
+    "style": "65 BPM, Egyptian Drama Ballad, Straightforward clean vocals, No adlibs, Minimalist slow piano, Soft orchestral strings, Atmospheric, Cinematic.",
+    "structure": "[Intro: Simple slow piano, cinematic and steady]\n\n[Verse: clean and straightforward]\n{V1}\n\n[Instrumental: Clean vocal over piano]\n[Verse]\n{V2}\n\n[Chorus: Soft strings, steady vocal delivery hook]\n{CHORUS}\n\n[Instrumental Solo: Quiet focus on words, no adlibs]\n\n[Verse: softest piano, focus on narrative clarity]\n{V3}\n\n[Breakdown: Steady rhythmic pulse focus]\n[Verse]\n{V4}\n\n[Chorus: Final steady delivery, clean orchestral swell]\n{CHORUS}\n\n[Bridge Solo: Building string intensity, emotional delivery]\n[Bridge]\n{BRIDGE}\n\n[Outro: Final piano note, clean cinematic ending]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Steady Shaabi Rhythm",
+    "bpm": "130",
+    "style": "130 BPM, Egyptian Shaabi, Rhythmic monotone delivery, Clear articulation, Steady percussion, Repetitive synth riff, Heavy Darbuka accents, Dance.",
+    "structure": "[Intro: Darbuka beat starts steady, simple synth riff]\n\n[Verse: rhythmic and monotone]\n{V1}\n\n[Instrumental: Continuation of steady beat]\n[Verse]\n{V2}\n\n[Chorus: Rhythmic steady vocal, catchy Shaabi hook]\n{CHORUS}\n\n[Instrumental Solo: Darbuka breakdown, synth accents]\n\n[Verse: stripped back percussion, direct delivery]\n{V3}\n\n[Breakdown: Rhythmic flow focus]\n[Verse]\n{V4}\n\n[Chorus: Maximum rhythmic energy, Shaabi ensemble]\n{CHORUS}\n\n[Bridge Solo: Increased percussion layers, faster flow]\n[Bridge]\n{BRIDGE}\n\n[Outro: Steady beat stops abruptly, final synth note]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Techno Dance Continuity",
+    "bpm": "128",
+    "style": "128 BPM, Peak-Time Techno, Hypnotic Arabic chants, Continuous 909 kick, Industrial synths, Acid bassline filter, No rhythmic breaks, Seamless pulse.",
+    "structure": "[Intro: Heavy 909 kick, industrial synths immediately]\n\n[Verse: hypnotic and industrial]\n{V1}\n\n[Instrumental: Evolving textures]\n[Verse]\n{V2}\n\n[Chorus: Uninterrupted pulse, no rhythmic breaks]\n{CHORUS}\n\n[Instrumental Solo: Acid bassline filter sweep, no stops]\n\n[Verse: minimalist textures over driving kick]\n{V3}\n\n[Breakdown: Continuous flow focus]\n[Verse]\n{V4}\n\n[Chorus: Full techno intensity, maximum synth density]\n{CHORUS}\n\n[Bridge Solo: Building synth tension, chant layering]\n[Bridge]\n{BRIDGE}\n\n[Outro: Continuous kick fading, atmospheric synth note]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "The Blame Game (Rock)",
+    "bpm": "140",
+    "style": "140 BPM, Alternative Hard Rock, Gritty aggressive male vocals, Distorted electric guitars, Heavy driving drums, Punchy staccato, Heavy crash cymbals.",
+    "structure": "[Intro: Heavy distorted guitar riff, drum count-in]\n\n[Verse: gritty and aggressive]\n{V1}\n\n[Instrumental: Bass-driven rhythm]\n[Verse]\n{V2}\n\n[Chorus: Anthemic peak, full distortion, driving beat]\n{CHORUS}\n\n[Instrumental Solo: Raw vocal build-up, sudden drum solo]\n\n[Verse: stripped back to bass and drums]\n{V3}\n\n[Breakdown: Aggressive vocal focus]\n[Verse]\n{V4}\n\n[Chorus: Peak energy climax, layered guitars]\n{CHORUS}\n\n[Bridge Solo: Rising drum intensity, guitar feedback]\n[Bridge]\n{BRIDGE}\n\n[Outro: Final power chord, fading feedback]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "The Blame Game (Trap-Funk)",
+    "bpm": "140",
+    "style": "140 BPM, Modern Trap-Funk, Autotuned aggressive male rap, Melodic pop chorus, Heavy 808 bass slides, Fast hi-hat rolls, Funky synth stabs.",
+    "structure": "[Intro: 808 bass slides, glitchy hats, synth stabs]\n\n[Verse: aggressive rhythmic rap]\n{V1}\n\n[Instrumental: Atmospheric pads enter]\n[Verse]\n{V2}\n\n[Chorus: High-energy drop, funky slap-bass hook]\n{CHORUS}\n\n[Instrumental Solo: Raw vocal intensity, filtered guitar]\n\n[Verse: stripped back beat focus]\n{V3}\n\n[Breakdown: Rhythmic rap delivery]\n[Verse]\n{V4}\n\n[Chorus: Maximum energy, stadium-ready bass]\n{CHORUS}\n\n[Bridge Solo: Funky rhythmic guitars, building 808]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fade to rhythmic pulse, dying synth echoes]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "WC 2026 Hybrid Anthem",
+    "bpm": "126",
+    "style": "126 BPM, Latin-Pop Hybrid Anthem, Santana style electric guitar, Hammond B3 organ, Heavy congas, Lush strings, Stadium crowd chants.",
+    "structure": "[Intro: Warm electric guitar riff, Hammond organ]\n\n[Verse: rhythmic and celebratory]\n{V1}\n\n[Instrumental: Rhythmic guitar strums]\n[Verse]\n{V2}\n\n[Chorus: Huge uplifting layers, chants, congas hook]\n{CHORUS}\n\n[Instrumental Solo: Soaring expressive Santana-style solo]\n\n[Verse: percussion-led focus, crowd noise]\n{V3}\n\n[Breakdown: Building vocal intensity]\n[Verse]\n{V4}\n\n[Chorus: Maximum intensity, stadium noise, driving beat]\n{CHORUS}\n\n[Bridge Solo: Heavy stadium percussion, soaring strings]\n[Bridge]\n{BRIDGE}\n\n[Outro: Layered vocals fading, high-sustain guitar]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Bedouin Cyber-Techno",
+    "bpm": "135",
+    "style": "135 BPM, Bedouin Cyber-Techno, Deep Tribal Techno, Hypnotic Rababa, Heavy sub-bass, Deep techno kick, Shrill Ney flute, Futuristic folk.",
+    "structure": "[Intro: Ethereal Rababa, synth drone, vocal humming]\n\n[Verse: tribal folk textures]\n{V1}\n\n[Instrumental: Rhythmic tribal percussion enters]\n[Verse]\n{V2}\n\n[Chorus: Heavy Techno Kick, pulsing Sub-bass, chanting]\n{CHORUS}\n\n[Instrumental Solo: Percussion breakdown, solo Ney flute]\n\n[Verse: minimalist pulse focus, Bedouin delivery]\n{V3}\n\n[Breakdown: Sub-bass focus]\n[Verse]\n{V4}\n\n[Chorus: Maximum intensity climax, futuristic folk fusion]\n{CHORUS}\n\n[Bridge Solo: Heavy tribal percussion, shrill Ney]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading Sand Wind textures, digital glitch]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Fuad Abdul Majed - 6/8 Darj",
+    "bpm": "112",
+    "style": "112 BPM, Traditional Muwashah, 6/8 Darj rhythmic swing, Clear Arabic articulation, Lush orchestral strings, Rhythmic accordion, Bendir, Taarija, Tzaghrit.",
+    "structure": "[Intro: String swell, Rhythmic Bendir, Violin Taksim]\n\n[Verse: clear articulation]\n{V1}\n\n[Instrumental: Syncopated percussion build-up]\n[Verse]\n{V2}\n\n[Chorus: Melodic peak, rhythmic chanting, full ensemble]\n{CHORUS}\n\n[Instrumental Solo: Technical Violin and Accordion duel]\n\n[Verse: stripped back beat, breathy vocal delivery]\n{V3}\n\n[Breakdown: Focus on muwashah swing]\n[Verse]\n{V4}\n\n[Chorus: Maximum energy climax, layered harmonies]\n{CHORUS}\n\n[Bridge Solo: Dramatic Orchestral String Solo, final Mawal]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fast rhythmic fade, sweeping violins, final strike]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Fuad Abdul Majed - 10/4 Samai Thaqil",
+    "bpm": "82",
+    "style": "82 BPM, Classical Muwashah, 10/4 Samai Thaqil rhythm, Soulful melismatic vocals, Mournful Ney, Acoustic Qanoon, Deep Tar strikes, Lush strings, Piano.",
+    "structure": "[Intro: Ney Taksim, Qanoon tremolos, 10/4 Tar, Piano]\n\n[Verse: soulful and melismatic]\n{V1}\n\n[Instrumental: Oud and Violin call-and-response]\n[Verse]\n{V2}\n\n[Chorus: Anthemic melodic peak, soaring strings, percussion]\n{CHORUS}\n\n[Instrumental Solo: Orchestral String and Qanoon interlude]\n\n[Verse: minimalist Tar pulse, emotional narrative]\n{V3}\n\n[Breakdown: Focus on vocal narrativa]\n[Verse]\n{V4}\n\n[Chorus: Full orchestral intensity, thundering percussion]\n{CHORUS}\n\n[Bridge Solo: Conversation between Ney, Qanoon, and Strings]\n[Bridge]\n{BRIDGE}\n\n[Outro: Slow fading Oud, final single Tar strike, reverb]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Bollywood Pop Ghazal",
+    "bpm": "102",
+    "style": "102 BPM, Modern Indian Pop Ghazal, Smooth male vocals, Bright acoustic guitar, Melodic synth plucks, Tabla-Dholak fusion, Bollywood strings, Flute hook.",
+    "structure": "[Intro: Upbeat Guitar riff, synth pads, bright Flute]\n\n[Verse: smooth and romantic]\n{V1}\n\n[Instrumental: Rhythmic build-up, light Dholak accents]\n[Verse]\n{V2}\n\n[Chorus: Anthemic melodic peak, driving percussion]\n{CHORUS}\n\n[Instrumental Solo: Acoustic Guitar and Melodic Synth duel]\n\n[Verse: stripped back to vocals and finger-snapping]\n{V3}\n\n[Breakdown: Rhythmic focus]\n[Verse]\n{V4}\n\n[Chorus: Maximum energy climax, full ensemble]\n{CHORUS}\n\n[Bridge Solo: Dramatic String swell, soulful vocal melisma]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading Guitar and Synth, final Flute flourish]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Indie-Ghazal Fusion",
+    "bpm": "96",
+    "style": "96 BPM, Indie-Indian Fusion Ghazal, Soulful breezy male vocals, Funky electric bass, Clean guitar licks, Rhythmic Matka, Shaker, Soft harmonium.",
+    "structure": "[Intro: Groovy Bassline, shaker, soft Harmonium]\n\n[Verse: soulful and breezy]\n{V1}\n\n[Instrumental: Clean Electric Guitar response riff]\n[Verse]\n{V2}\n\n[Chorus: Uplifting drop, melodic Matka, backing harmonies]\n{CHORUS}\n\n[Instrumental Solo: Soulful Harmonium, groovy Bass]\n\n[Verse: minimalist Bass and Vocals]\n{V3}\n\n[Breakdown: Breezy feel focus]\n[Verse]\n{V4}\n\n[Chorus: Full groove return, maximum energy]\n{CHORUS}\n\n[Bridge Solo: Rhythmic clapping build-up, guitar progression]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading groove, vocal ad-libs, harmonium chord]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "The UK Trend",
+    "bpm": "122",
+    "style": "122 BPM, Modern UK Indie-Pop, Crisp male vocals, British accent, Rhythmic electric guitar, Pulsing synth-bass, Upbeat, Melancholic, 2026 Production.",
+    "structure": "[Intro: Muffled city sounds, rhythmic guitar, kick pulse]\n\n[Verse: upbeat and melancholic]\n{V1}\n\n[Instrumental: Synth-pad swell]\n[Verse]\n{V2}\n\n[Chorus: High-energy pop drop, driving bassline]\n{CHORUS}\n\n[Instrumental Solo: Filtered Synth solo, groovy bass bridge]\n\n[Verse: music drops out to heartbeat pulse]\n{V3}\n\n[Breakdown: Intimate vocals focus]\n[Verse]\n{V4}\n\n[Chorus: Full stadium energy, bright lead synths]\n{CHORUS}\n\n[Bridge Solo: Electric Guitar solo with heavy reverb]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading rhythmic guitar, distant sirens, synth note]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "The Fulfillment of Love",
+    "bpm": "95",
+    "style": "95 BPM, Global Pop Ballad, Soulful male vocals, Grand piano, Acoustic guitar fingerpicking, Lush strings, Booming percussion, Gospel-style backing.",
+    "structure": "[Intro: Warm piano melody, acoustic guitar fingerpicking]\n\n[Verse: soulful and heartfelt]\n{V1}\n\n[Instrumental: Subtle electronic percussion enters]\n[Verse]\n{V2}\n\n[Chorus: Anthemic, soaring strings, explosive peak]\n{CHORUS}\n\n[Instrumental Solo: Emotional Fiddle solo, cinematic strings]\n\n[Verse: intimate piano and vocals, fragile tone]\n{V3}\n\n[Breakdown: Heartfelt delivery]\n[Verse]\n{V4}\n\n[Chorus: Maximum intensity, gospel backing vocals]\n{CHORUS}\n\n[Bridge Solo: Building synth texture, steady pop beat]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading acoustic guitar, final vocal line]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "The London Rain",
+    "bpm": "102",
+    "style": "102 BPM, Modern UK Indie-Ghazal, Smooth male vocals, Rhythmic electric guitar, Pulsing synth-bass, Tabla-Dholak fusion, Rain textures, Upbeat romantic.",
+    "structure": "[Intro: Muffled city sounds, rhythmic guitar, synth pads]\n\n[Verse: smooth and romantic]\n{V1}\n\n[Instrumental: Rhythmic build-up, light Dholak accents]\n[Verse]\n{V2}\n\n[Chorus: Anthemic melodic peak, driving UK garage bassline]\n{CHORUS}\n\n[Instrumental Solo: Electric Guitar and Melodic Synth duel]\n\n[Verse: stripped back to vocals and finger-snapping]\n{V3}\n\n[Breakdown: Atmospheric rain focus]\n[Verse]\n{V4}\n\n[Chorus: Maximum energy climax, layered harmonies]\n{CHORUS}\n\n[Bridge Solo: Dramatic String swell, vocal melisma]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading Electric Guitar, city noise fade]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Eternal Fulfillment",
+    "bpm": "96",
+    "style": "96 BPM, Indie-Global Ghazal Fusion, Soulful breezy male vocals, Funky electric bass, Acoustic guitar plucking, Rhythmic Matka, Shaker, Dreamy synth.",
+    "structure": "[Intro: Groovy Bassline, shaker, warm Piano melody]\n\n[Verse: soulful and breezy]\n{V1}\n\n[Instrumental: Acoustic Guitar response riff]\n[Verse]\n{V2}\n\n[Chorus: Uplifting Matla Drop, melodic Matka, harmonies]\n{CHORUS}\n\n[Instrumental Solo: Soulful Piano solo, groovy Bass]\n\n[Verse: minimalist Bass and Vocals, intimate delivery]\n{V3}\n\n[Breakdown: Breezy festival focus]\n[Verse]\n{V4}\n\n[Chorus: Full groove return, maximum energy]\n{CHORUS}\n\n[Bridge Solo: Rhythmic clapping build-up, guitar progression]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading groove, vocal ad-libs, soft Piano chord]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Shattered Glass (Urban Ghazal)",
+    "bpm": "102",
+    "style": "102 BPM, Modern UK Urban-Ghazal, Male female duet, Bollywood group chorus, Indie-rock electric guitar, Melodic synth, Deep sub-bass, Anthemic.",
+    "structure": "[Intro: Muffled street ambience, electric guitar, synth hum]\n\n[Verse: gritty and urban]\n{V1}\n\n[Instrumental: Rhythmic build-up]\n[Verse]\n{V2}\n\n[Chorus: Full Bollywood Group Ensemble, soaring strings]\n{CHORUS}\n\n[Instrumental Solo: Synth Keyboard and Electric Guitar duel]\n\n[Verse: stripped back to accordion pad and heartbeat kick]\n{V3}\n\n[Breakdown: Duet focus]\n[Verse]\n{V4}\n\n[Chorus: Maximum stadium energy, full group ensemble]\n{CHORUS}\n\n[Bridge Solo: Solo Synth leads into funky Electric Guitar]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading Electric Guitar feedback, synth echoes]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "The Full Heart (Ghazal Duet)",
+    "bpm": "96",
+    "style": "96 BPM, Modern Indie-Global Ghazal, Breezy male-female duet, Nylon string guitar, Lush accordion, Minimalist synth pads, Dreamy, Soulful.",
+    "structure": "[Intro: Warm Piano, soft Nylon Guitar, light Shaker]\n\n[Verse: intimate and breezy duet]\n{V1}\n\n[Instrumental: Rhythmic build-up]\n[Verse]\n{V2}\n\n[Chorus: Romantic Male-Female harmonies, melodic Matka, strings]\n{CHORUS}\n\n[Instrumental Solo: Synth Keyboard and Nylon Guitar interplay]\n\n[Verse: intimate vocal over solo Accordion drone]\n{V3}\n\n[Breakdown: Dreamy atmosphere focus]\n[Verse]\n{V4}\n\n[Chorus: Maximum joy intensity, full duet harmony return]\n{CHORUS}\n\n[Bridge Solo: Steady Accordion with rising Synth intensity]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading soft Guitar chords, echoing Piano note]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Moroccan Urban Gnawa-Pop",
+    "bpm": "110",
+    "style": "110 BPM, Moroccan Gnawa Fusion, Autotuned male vocals, Deep Sintir bassline, Metallic Qraqeb rhythm, Modern 808 sub-bass, Electric Oud riffs, Urban Maghreb.",
+    "structure": "[Intro: Hypnotic Sintir, metallic Qraqeb]\n\n[Verse: rhythmic delivery]\n{V1}\n\n[Instrumental: Deep 808 bass entry]\n[Verse]\n{V2}\n\n[Chorus: Heavy fusion drop, Sintir-808 layer]\n{CHORUS}\n\n[Instrumental Solo: Electric Oud, fast Qraqeb rolls]\n\n[Verse: stripped back bass]\n{V3}\n\n[Breakdown: Minimalist pulse, vocal chanting]\n[Verse]\n{V4}\n\n[Chorus: Maximum fusion energy]\n{CHORUS}\n\n[Bridge Solo: Building percussion, Sintir riff]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading Sintir, final Qraqeb hit]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Lebanese Cinematic Tarab-Pop",
+    "bpm": "95",
+    "style": "95 BPM, Lebanese Neo-Tarab, Soulful male vocals, Lush orchestral strings, Accordion melodies, Rhythmic Darbuka, Heavy bass, 2026 Polished production.",
+    "structure": "[Intro: Orchestral string swell, solo Accordion]\n\n[Verse: soulful and emotive]\n{V1}\n\n[Instrumental: Soft Darbuka pulse]\n[Verse]\n{V2}\n\n[Chorus: Anthemic peak, soaring strings]\n{CHORUS}\n\n[Instrumental Solo: Technical Accordion and Violin duel]\n\n[Verse: stripped to vocals and strings]\n{V3}\n\n[Breakdown: Intimate piano, mawal]\n[Verse]\n{V4}\n\n[Chorus: Maximum emotional climax]\n{CHORUS}\n\n[Bridge Solo: Dramatic orchestral build]\n[Bridge]\n{BRIDGE}\n\n[Outro: Slow string fade, final Darbuka strike]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Bollywood Lo-Fi Ghazal",
+    "bpm": "78",
+    "style": "78 BPM, Bollywood Lo-Fi, Breathful male vocals, Hazy synth pads, Vinyl crackle, Melodic Bansuri flute, Soft Tabla-Dholak, Dreamy atmospheric production.",
+    "structure": "[Intro: Vinyl crackle, hazy synths, Bansuri flute]\n\n[Verse: breathy and intimate]\n{V1}\n\n[Instrumental: Soft Lo-fi beat entry]\n[Verse]\n{V2}\n\n[Chorus: Dreamy melodic peak, layered harmonies]\n{CHORUS}\n\n[Instrumental Solo: Soulful Flute, muffled synth lead]\n\n[Verse: stripped back, focus on vocals]\n{V3}\n\n[Breakdown: Ambient pads, minimalist percussion]\n[Verse]\n{V4}\n\n[Chorus: Full dreamy climax]\n{CHORUS}\n\n[Bridge Solo: Soft piano and flute interplay]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading synths, final flute breath]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Moroccan Saharan Desert Rock",
+    "bpm": "115",
+    "style": "115 BPM, Moroccan Desert Rock, Raw gritty vocals, Overdriven electric guitar, Tinariwen style, Hypnotic percussion, Bendir strikes, Saharan atmosphere.",
+    "structure": "[Intro: Gritty guitar riff, rhythmic Bendir claps]\n\n[Verse: raw and storytelling]\n{V1}\n\n[Instrumental: Driving guitar groove]\n[Verse]\n{V2}\n\n[Chorus: High energy, rhythmic chanting, guitar bends]\n{CHORUS}\n\n[Instrumental Solo: Bluesy Saharan guitar solo]\n\n[Verse: stripped to percussion and vocals]\n{V3}\n\n[Breakdown: Hypnotic pulse, hand claps]\n[Verse]\n{V4}\n\n[Chorus: Maximum rock energy]\n{CHORUS}\n\n[Bridge Solo: Intense building guitar, heavy Bendir]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading guitar feedback, final clap]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Lebanese Summer Club Anthem",
+    "bpm": "126",
+    "style": "126 BPM, Modern Lebanese Club Pop, Energetic male vocals, Heavy Tabl, Mijwiz synth leads, Deep house kick, Sharp brass stabs, Beirut nightlife vibe.",
+    "structure": "[Intro: Explosive Tabl break, Mijwiz synth lead]\n\n[Verse: rhythmic and fast]\n{V1}\n\n[Instrumental: Deep house kick entry]\n[Verse]\n{V2}\n\n[Chorus: High-energy drop, heavy Tabl, Mijwiz hook]\n{CHORUS}\n\n[Instrumental Solo: Fast Mijwiz shredding, brass stabs]\n\n[Verse: stripped beat, claps]\n{V3}\n\n[Breakdown: Minimalist pulse, atmospheric mawal]\n[Verse]\n{V4}\n\n[Chorus: Maximum club energy, layered harmonies]\n{CHORUS}\n\n[Bridge Solo: Percussion breakdown, building synth]\n[Bridge]\n{BRIDGE}\n\n[Outro: Rhythmic Tabl fade, final sharp synth hit]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Bollywood Phonk-Ghazal Fusion",
+    "bpm": "135",
+    "style": "135 BPM, Bollywood Phonk Fusion, Cowbell melodies, Deep distorted 808 bass, Soulful male vocals, Melodic Sitar riffs, High-energy drift production.",
+    "structure": "[Intro: Muffled Sitar, cowbell melody, 808 slide]\n\n[Verse: rhythmic and aggressive]\n{V1}\n\n[Instrumental: Full Phonk beat drop]\n[Verse]\n{V2}\n\n[Chorus: Heavy bass peak, Sitar hook, cowbells]\n{CHORUS}\n\n[Instrumental Solo: Fast Sitar shredding, distorted 808]\n\n[Verse: minimalist beat]\n{V3}\n\n[Breakdown: Atmospheric pads, vocal echoes]\n[Verse]\n{V4}\n\n[Chorus: Maximum drift energy]\n{CHORUS}\n\n[Bridge Solo: Intense cowbell and Sitar duel]\n[Bridge]\n{BRIDGE}\n\n[Outro: Fading 808 pulse, final Sitar note]\n{OUTRO}\n[End]"
+  },
+  {
+    "name": "Anfield Cup Final Anthem (Bilingual)",
+    "bpm": "105",
+    "style": "105 BPM, Cinematic Stadium Rock, Anthemic Choral harmonies, Powerful male lead, Overdriven electric guitar solos, Booming floor toms, Triumphant orchestral brass, Bilingual Arabic and English, High-fidelity 2026.",
+    "structure": "[Intro: Distant crowd chanting, floor tom pulse, piano]\n\n[Verse 1: Arabic - soulful and building]\n{V1}\n\n[Instrumental: Bass-driven groove]\n[Verse 2: English - powerful]\n{V2}\n\n[Chorus 1: English - Explosive stadium peak, maximum choral layers]\n{CHORUS_EN}\n\n[Instrumental Solo: Melodic guitar solo, stadium reverb]\n\n[Chorus 2: Arabic - High energy anthem, layered harmonies]\n{CHORUS_AR}\n\n[Breakdown: Crowd noise, rhythmic clapping]\n\n[Bridge Solo: Mawal over heavy rock guitar]\n[Bridge]\n{BRIDGE}\n\n[Outro: Triumphant chord, crowd noise, cheering]\n{OUTRO}\n[End]"
+  }
+]

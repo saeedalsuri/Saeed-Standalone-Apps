@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' data: blob: file: gap:;">
+    <title>ProJet : Doc Reader (Final Stable)</title>
+
+    <script src="cordova.js"></script>
+    <script src="js/pdf.min.js"></script>
+    <script>
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "js/pdf.worker.min.js";
+    </script>
+    <script src="js/mammoth.browser.min.js"></script>
+
+    <style>
+      :root {
+        --app-bg: #121212;
+        --panel-bg: #1a1a1a;
+        --panel-border: #333;
+        --page-bg: #2a2a2a;
+        --text-main: #e0e0e0;
+        --text-muted: #888888;
+        --highlight: #ffd700;
+        --accent: #4a90e2;
+        --danger: #ff5f5f;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--app-bg);
+        color: var(--text-main);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      /* --- CONTROL BAR --- */
+      #controls {
+        flex: 0 0 70px;
+        background: var(--panel-bg);
+        border-bottom: 1px solid var(--panel-border);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        z-index: 100;
+        position: relative;
+        padding: 0 20px;
+      }
+
+      .btn-group {
+        display: flex;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 5px 15px;
+        border-radius: 40px;
+        border: 1px solid #333;
+      }
+
+      .control-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        color: #777;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
+        border-radius: 50%;
+      }
+
+      .control-btn:hover:not(:disabled) {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.1);
+        transform: scale(1.1);
+      }
+
+      .control-btn.active {
+        color: var(--accent);
+        text-shadow: 0 0 10px rgba(74, 144, 226, 0.6);
+      }
+
+      .control-btn:disabled {
+        color: #333;
+        cursor: default;
+        transform: none;
+      }
+
+      /* --- VOICE SELECT --- */
+      #voice-select {
+        background: #000;
+        color: var(--text-main);
+        border: 1px solid #444;
+        padding: 8px 12px;
+        border-radius: 6px;
+        font-size: 14px;
+        max-width: 250px;
+        outline: none;
+        cursor: pointer;
+        transition: border 0.2s;
+      }
+      #voice-select:hover {
+        border-color: var(--accent);
+      }
+      optgroup {
+        background: #333;
+        color: #fff;
+        font-weight: bold;
+      }
+      option {
+        background: #1a1a1a;
+        color: #ccc;
+      }
+
+      /* Exit Button */
+      #btn-exit {
+        position: absolute;
+        right: 20px;
+        color: var(--danger);
+        border: 1px solid var(--danger);
+        border-radius: 8px;
+        background: transparent;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #btn-exit:hover {
+        background: var(--danger);
+        color: white;
+      }
+
+      /* --- DOCUMENT VIEWPORT --- */
+      #scroll-viewport {
+        flex: 1;
+        overflow-y: auto;
+        display: flex;
+        justify-content: center;
+        padding: 40px 20px;
+      }
+
+      #document-page {
+        width: 100%;
+        max-width: 850px;
+        min-height: 1000px;
+        background-color: var(--page-bg);
+        color: var(--text-main);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        padding: 70px 60px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        font-size: 19px;
+        line-height: 1.9;
+        white-space: pre-wrap;
+        position: relative;
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 600px) {
+        #controls {
+          padding: 0 10px;
+          gap: 8px;
+          flex-wrap: wrap;
+          height: auto;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        #voice-select {
+          max-width: 150px;
+          font-size: 12px;
+        }
+        .control-btn {
+          width: 35px;
+          height: 35px;
+          font-size: 16px;
+        }
+        #document-page {
+          padding: 30px 20px;
+          font-size: 16px;
+          line-height: 1.6;
+        }
+        #btn-exit {
+          top: 5px;
+          right: 5px;
+          width: 30px;
+          height: 30px;
+          font-size: 14px;
+          position: absolute;
+        }
+      }
+
+      .import-zone {
+        height: 100%;
+        border: 2px dashed #444;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        cursor: pointer;
+        padding: 100px 0;
+        transition: all 0.2s;
+      }
+      .import-zone:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+        background: rgba(74, 144, 226, 0.05);
+      }
+      .big-icon {
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+
+      /* --- HIGHLIGHTING --- */
+      .word-span {
+        cursor: pointer;
+        border-radius: 3px;
+        padding: 1px 0;
+        transition: background 0.1s;
+      }
+      .word-span:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .active-word {
+        background-color: var(--highlight);
+        color: #121212 !important;
+        font-weight: bold;
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        padding: 2px 4px;
+        margin: 0 -4px;
+        border-radius: 4px;
+      }
+
+      .rtl-layout {
+        direction: rtl;
+        text-align: right;
+      }
+      #file-input {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="controls">
+      <select id="voice-select">
+        <option disabled selected>Loading voices...</option>
+      </select>
+
+      <div class="btn-group">
+        <button id="btn-play" class="control-btn" title="Speak">
+          &#128266;
+        </button>
+        <button id="btn-pause" class="control-btn" title="Pause">
+          &#10074;&#10074;
+        </button>
+        <button id="btn-stop" class="control-btn" title="Stop">&#9724;</button>
+      </div>
+
+      <button id="btn-exit" onclick="resetApp()" title="Close Document">
+        &#10006;
+      </button>
+    </div>
+
+    <div id="scroll-viewport">
+      <div id="document-page">
+        <div class="import-zone" onclick="triggerImport()">
+          <div class="big-icon">&#128193;</div>
+          <div><b>Click Here</b> to Open Document</div>
+          <div style="font-size: 0.8em; margin-top: 8px">(PDF, Docx, Text)</div>
+        </div>
+      </div>
+    </div>
+
+    <input type="file" id="file-input" accept=".txt,.pdf,.docx" />
+
+    <script>
+      // --- State ---
+      let fullText = "";
+      let synthesis = window.speechSynthesis;
+      let utterance = null;
+      let isPaused = false;
+      let isPlaying = false;
+      let currentWordIndex = 0;
+      let wordElements = [];
+      let voicesLoaded = false;
+
+      // --- DOM ---
+      const page = document.getElementById("document-page");
+      const fileInput = document.getElementById("file-input");
+      const btnPlay = document.getElementById("btn-play");
+      const btnPause = document.getElementById("btn-pause");
+      const btnStop = document.getElementById("btn-stop");
+      const voiceSelect = document.getElementById("voice-select");
+
+      // --- Init ---
+      fileInput.addEventListener("change", handleFileSelect);
+      window.addEventListener("paste", (e) => {
+        const text = (e.clipboardData || window.clipboardData).getData("text");
+        if (text) processText(text);
+      });
+
+      // Robust Voice Loading
+      function loadVoices() {
+        const voices = synthesis.getVoices();
+        if (!voices.length) {
+          setTimeout(loadVoices, 100);
+          return;
+        }
+
+        // If already loaded same count, skip to avoid flicker
+        if (voiceSelect.options.length > 1 && voicesLoaded) return;
+
+        voiceSelect.innerHTML = "";
+        const groups = {};
+
+        // Group logic
+        voices.forEach((v) => {
+          const lang = v.lang.substring(0, 2).toUpperCase();
+          if (!groups[lang]) groups[lang] = [];
+          groups[lang].push(v);
+        });
+
+        // Build UI
+        Object.keys(groups)
+          .sort()
+          .forEach((lang) => {
+            const optGroup = document.createElement("optgroup");
+            optGroup.label = lang + ` (${groups[lang].length})`;
+
+            groups[lang]
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .forEach((v) => {
+                const opt = document.createElement("option");
+                opt.textContent = `${v.name}`;
+                opt.value = v.name;
+                // Auto-select English defaults
+                if (v.default && lang === "EN" && !voicesLoaded)
+                  opt.selected = true;
+                optGroup.appendChild(opt);
+              });
+            voiceSelect.appendChild(optGroup);
+          });
+        voicesLoaded = true;
+      }
+
+      if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = loadVoices;
+      }
+      loadVoices();
+
+      // Force TTS Engine to wake up
+      function wakeUpTTS() {
+        if(window.speechSynthesis) {
+          let silentUtterance = new SpeechSynthesisUtterance('');
+          silentUtterance.volume = 0;
+          window.speechSynthesis.speak(silentUtterance);
+        }
+      }
+      document.addEventListener("deviceready", wakeUpTTS, false);
+      window.addEventListener('load', wakeUpTTS);
+
+      // --- Controls ---
+      btnPlay.onclick = () =>
+        isPaused ? resumeReading() : startReading(currentWordIndex);
+      btnPause.onclick = () => {
+        if (isPlaying && !isPaused) {
+          synthesis.pause();
+          isPaused = true;
+          isPlaying = false;
+          updateUIState();
+        }
+      };
+      btnStop.onclick = stopReading;
+      updateUIState();
+
+      function updateUIState() {
+        const hasText = fullText.length > 0;
+        btnPlay.disabled = !hasText;
+        btnPause.disabled = !hasText || (!isPlaying && !isPaused);
+        btnStop.disabled = !hasText;
+
+        btnPlay.className = "control-btn";
+        btnPause.className = "control-btn";
+        if (isPlaying) btnPlay.classList.add("active");
+        else if (isPaused) btnPause.classList.add("active");
+      }
+
+      // --- File Logic ---
+      function triggerImport() {
+        if (!fullText) fileInput.click();
+      }
+
+      function resetApp() {
+        stopReading();
+        fullText = "";
+        currentWordIndex = 0;
+        wordElements = [];
+        fileInput.value = "";
+        page.className = "";
+        page.innerHTML = `
+                <div class="import-zone" onclick="triggerImport()">
+                    <div class="big-icon">&#128193;</div>
+                    <div><b>Click Here</b> to Open Document</div>
+                    <div style="font-size: 0.8em; margin-top:8px">(PDF, Docx, Text)</div>
+                </div>
+            `;
+        updateUIState();
+      }
+
+      function handleFileSelect(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+        page.innerHTML =
+          "<div style='text-align:center; padding-top:100px; color:#888'>Loading Content...</div>";
+        const reader = new FileReader();
+
+        if (file.type === "text/plain") {
+          reader.onload = (e) => processText(e.target.result);
+          reader.readAsText(file);
+        } else if (file.type === "application/pdf") {
+          const fr = new FileReader();
+          fr.onload = function () {
+            parsePDF(new Uint8Array(this.result));
+          };
+          fr.readAsArrayBuffer(file);
+        } else if (file.name.endsWith(".docx")) {
+          const fr = new FileReader();
+          fr.onload = function () {
+            mammoth
+              .extractRawText({ arrayBuffer: fr.result })
+              .then((r) => processText(r.value))
+              .catch((e) => {
+                alert("Docx Error: " + e);
+                resetApp();
+              });
+          };
+          fr.readAsArrayBuffer(file);
+        }
+      }
+
+      async function parsePDF(data) {
+        try {
+          const pdf = await pdfjsLib.getDocument(data).promise;
+          let extracted = "";
+          for (let i = 1; i <= pdf.numPages; i++) {
+            const pageData = await pdf.getPage(i);
+            const content = await pageData.getTextContent();
+            extracted +=
+              content.items.map((item) => item.str).join(" ") + "\n\n";
+          }
+          processText(extracted);
+        } catch (e) {
+          alert("PDF Error: " + e.message);
+          resetApp();
+        }
+      }
+
+      function processText(text) {
+        fullText = text.replace(/[ \t]+/g, " ").trim();
+        stopReading();
+        currentWordIndex = 0;
+
+        detectLanguageAndSetVoice(fullText);
+        renderText();
+        updateUIState();
+      }
+
+      function detectLanguageAndSetVoice(text) {
+        // 1. Detect Code
+        let francCode = "eng";
+        if (typeof franc !== "undefined")
+          francCode = franc(text.substring(0, 400));
+
+        const codeMap = {
+          arb: "AR",
+          eng: "EN",
+          fra: "FR",
+          spa: "ES",
+          deu: "DE",
+          rus: "RU",
+          ita: "IT",
+        };
+        const detectedGroup = codeMap[francCode] || "EN";
+
+        // 2. Set Layout
+        page.className =
+          detectedGroup === "AR" || francCode === "heb" ? "rtl-layout" : "";
+
+        // 3. Auto-Select Voice (Best Effort)
+        const options = voiceSelect.options;
+        let found = false;
+        for (let i = 0; i < options.length; i++) {
+          // Check if option is within correct OptGroup
+          if (options[i].parentElement.label.startsWith(detectedGroup)) {
+            voiceSelect.selectedIndex = i;
+            found = true;
+            // Prefer "Natural" voices if available in that group
+            if (options[i].text.toLowerCase().includes("natural")) {
+              voiceSelect.selectedIndex = i;
+              break;
+            }
+          }
+        }
+      }
+
+      function renderText() {
+        page.innerHTML = "";
+        const words = fullText.split(" ");
+        wordElements = [];
+        const fragment = document.createDocumentFragment();
+
+        words.forEach((word, index) => {
+          if (!word) return;
+          const span = document.createElement("span");
+          span.textContent = word + " ";
+          span.className = "word-span";
+          span.dataset.index = index;
+          span.onclick = (e) => {
+            e.stopPropagation();
+            // BUG FIX: Resume implies we use the user's CURRENTLY selected voice
+            stopReading();
+            currentWordIndex = parseInt(e.target.dataset.index);
+            highlightWord(currentWordIndex);
+            startReading(currentWordIndex);
+          };
+          fragment.appendChild(span);
+          wordElements.push(span);
+        });
+        page.appendChild(fragment);
+      }
+
+      function startReading(startIndex) {
+        if (!fullText) return;
+        synthesis.cancel();
+
+        const textSlice = wordElements
+          .slice(startIndex)
+          .map((el) => el.textContent)
+          .join("");
+        utterance = new SpeechSynthesisUtterance(textSlice);
+
+        // Use User Selection
+        const selectedVoiceName = voiceSelect.value;
+        const voices = synthesis.getVoices();
+        const chosenVoice = voices.find((v) => v.name === selectedVoiceName);
+        if (chosenVoice) utterance.voice = chosenVoice;
+
+        utterance.rate = 1.0;
+
+        utterance.onboundary = (event) => {
+          if (event.name !== "word" && event.name !== "sentence") return;
+          const charPos = event.charIndex;
+          if (wordElements[currentWordIndex])
+            wordElements[currentWordIndex].classList.remove("active-word");
+
+          let runningLength = 0;
+          let found = currentWordIndex;
+          for (let i = 0; i < wordElements.length - startIndex; i++) {
+            const wLen = wordElements[startIndex + i].textContent.length;
+            if (runningLength + wLen > charPos) {
+              found = startIndex + i;
+              break;
+            }
+            runningLength += wLen;
+          }
+          currentWordIndex = found;
+          highlightWord(currentWordIndex);
+        };
+
+        utterance.onstart = () => {
+          isPlaying = true;
+          isPaused = false;
+          updateUIState();
+        };
+        utterance.onend = () => {
+          isPlaying = false;
+          isPaused = false;
+          updateUIState();
+        };
+
+        synthesis.speak(utterance);
+      }
+
+      function resumeReading() {
+        if (isPaused) {
+          synthesis.resume();
+          isPlaying = true;
+          isPaused = false;
+          updateUIState();
+        }
+      }
+
+      function stopReading() {
+        synthesis.cancel();
+        isPlaying = false;
+        isPaused = false;
+        if (wordElements[currentWordIndex])
+          wordElements[currentWordIndex].classList.remove("active-word");
+        updateUIState();
+      }
+
+      function highlightWord(index) {
+        if (wordElements[index]) {
+          wordElements[index].classList.add("active-word");
+          wordElements[index].scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+          });
+        }
+      }
+    </script>
+  </body>
+</html>

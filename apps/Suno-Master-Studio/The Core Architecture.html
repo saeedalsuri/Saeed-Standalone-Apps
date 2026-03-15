@@ -1,0 +1,48 @@
+/**
+ * Logic Core for Suno V4.5 Prompt Engineering
+ */
+
+const SunoAppCore = {
+  // 1. Artist-to-Descriptor Database [cite: 66, 206]
+  artistLookup: {
+    "Drake": "Melodic trap, moody, deep 808s, reverb-heavy",
+    "Billie Eilish": "Minimal pop, whispery female vocals, dark bass, ethereal",
+    "Johnny Cash": "Deep raspy baritone, outlaw country, boom-chicka rhythm"
+  },
+
+  // 2. Metric Modulation Calculator for Odd Time Signatures [cite: 285, 292]
+  // BPM_modulated = (Base BPM / Tuplet Division) * 4
+  calculateModulatedBPM: (baseBpm, targetMeter) => {
+    const modulated = (baseBpm / targetMeter) * 4;
+    return Math.round(modulated);
+  },
+
+  // 3. Positive Constraint Converter [cite: 56, 197]
+  // Prevents the "Pink Elephant" problem [cite: 53, 191]
+  handleNegatives: (input) => {
+    if (input.toLowerCase().includes("no drums")) return "Acoustic, ambient drone, or percussion-free"; [cite: 58, 199]
+    if (input.toLowerCase().includes("no vocals")) return "[Instrumental]"; [cite: 61, 201]
+    return input;
+  },
+
+  // 4. The Golden Formula Generator [cite: 10, 147]
+  // Priority: [Genre] -> [Mood] -> [Tempo] -> [Instrumentation] -> [Vocals] -> [Production]
+  generateStylePrompt: (data) => {
+    let genre = data.genre || "Global Pop";
+    
+    // Convert artist names to descriptors automatically [cite: 66, 206]
+    if (this.artistLookup[genre]) genre = this.artistLookup[genre];
+
+    const sequence = [
+      genre,                // Most important [cite: 7, 144]
+      data.mood, 
+      `${data.bpm} BPM`,    // Numeric constraints work best [cite: 32, 170]
+      data.instruments,     // Limited to 3-5 singular nouns [cite: 40, 180, 667]
+      data.vocals,          // Gender + Tone [cite: 48, 185]
+      data.production       // High Fidelity, Clean Mix [cite: 87, 226, 700]
+    ];
+
+    // Join into a Narrative String for V4.5 [cite: 15, 156, 280]
+    return `A ${sequence.filter(Boolean).join(", ")}.`;
+  }
+};
