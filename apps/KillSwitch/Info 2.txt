@@ -1,0 +1,26 @@
+Yes, there are several **open-source** projects and tools on GitHub that can help you monitor, manage, or automatically kill background processes/apps on Windows 10/11 that consume **RAM** and **CPU** unnecessarily.
+
+None is a perfect 1:1 open-source clone of something like **Process Lasso** (which has advanced auto-rules, ProBalance, idle detection, etc.), but many get close—especially if you're willing to tweak config files or even modify the code.
+
+Here are the most relevant open-source options (all free, GitHub-based, focused on Windows):
+
+| Project / Repo | Language | Main Features | Auto-kill / Background? | Idle / Resource-based? | Best For | Link |
+|----------------|----------|---------------|--------------------------|-------------------------|----------|------|
+| **automatic-process-killer** (and better fork) | C# / .NET | Tray app, blacklist of exe names, auto-kills listed processes periodically | Yes (runs in background) | No (name-based only) | Simple auto-kill of specific unwanted apps (e.g. always kill telemetry stuff) | https://github.com/DeliciousLines/automatic-process-killer <br> Better fork: https://github.com/sm18lr88/automatic-process-killer (wildcards, paths) |
+| **task-cleaner** | ? (lightweight exe) | Monitors & auto-terminates specified processes, low resource use, hidden background mode | Yes | Name-based (not CPU/RAM thresholds) | Keeping system clean from persistent unwanted processes | https://github.com/michal-flaska/task-cleaner |
+| **snk** (Search and Kill) | ? | Console tool, kills processes matching search criteria (name, etc.) | Can script/schedule it | No, but easy to automate | Quick scripted killing | https://github.com/lcferrum/snk |
+| **WinMemoryCleaner** | C# | Optimizes RAM using native Windows APIs (Standby list, working set trim, etc.) | No killing, but frees RAM aggressively | Indirect (trims idle memory) | If the goal is mostly freeing RAM without killing apps | https://github.com/IgorMundstein/WinMemoryCleaner |
+| **System Informer** (successor to Process Hacker) | C/C++ | Advanced process viewer/manager (like super Task Manager), suspend/kill, detailed stats | Manual mostly, but has some automation plugins/rules | Can see idle time, but no built-in auto-kill | Best open-source replacement for Task Manager + manual control | https://github.com/winsiderss/systeminformer |
+| **killer** | Python | GUI process list, search/sort by CPU/RAM, multi-kill + kill children | Manual (but can script loop) | No | Easier multi-select killing than default Task Manager | https://github.com/ntaraujo/killer |
+
+### Quick Recommendations for Your Goal
+
+- **Want automatic + simple** → Start with **automatic-process-killer** (or its fork). Add names like `chrome.exe`, `msedge.exe`, `discord.exe` to the blacklist → it runs silently and kills them whenever they appear.
+- **Want something smarter (CPU/RAM thresholds + idle detection)** → None of the ready-made open-source ones do full "kill if >300 MB and idle >10 min" out of the box. But:
+  - Use **System Informer** to monitor manually.
+  - Or take the **Python + psutil** script I gave you earlier → it's open-source by nature, you own it, and you can customize thresholds, idle checks (using process CPU delta or last input time via `GetLastInputInfo` WinAPI), and add a tray icon with **pystray**.
+- **Want to build/extend one** → Fork **task-cleaner** or **automatic-process-killer** and add psutil-style checks (very doable in C#).
+
+If none fit perfectly, the Python route is still the most flexible "engine" you can build yourself quickly (and share as open-source if you want).
+
+Do you prefer a ready .exe with tray icon, or are you okay building/tweaking a Python script? Or want me to point you to one specific repo to try first?

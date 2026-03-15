@@ -3,9 +3,9 @@
 This document outlines the systematic workflow used to develop, optimize, and package the applications in this repository.
 
 ## Stage 1: Conceptualization & Prototyping
-- **Requirement Analysis**: Identifying the core problem (e.g., "Suno prompts are too complex to manage manually").
-- **Logic Design**: Drafting the logic (e.g., the `Suno_Prompting_Logic_Summary.md`) to define how the AI should be interacted with.
-- **HTML Prototypes**: Creating initial "Single File" HTML versions (`SunoMasterStudio.html`) to test core functionality and UI layouts.
+- **Concept Engineering**: For complex apps like **ACE-Step**, this stage involving designing a **Dual-Brain Architecture** (Planner LM + Engineer DiT) to handle nuanced creative tasks.
+- **System Logic**: For utilities like **KillSwitch**, focusing on resilient process management and diagnostic engines.
+- **HTML Prototypes**: Creating initial "Single File" HTML versions to test core functionality and UI layouts.
 
 ## Stage 2: Selection of Framework
 Based on the app's complexity, a framework was selected:

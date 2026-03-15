@@ -1,0 +1,177 @@
+2026-02-23 06:37:07,691 - INFO - Starting resource sweep...
+2026-02-23 06:40:12,250 - INFO - Starting resource sweep...
+2026-02-23 06:45:07,844 - INFO - Starting resource sweep...
+2026-02-23 06:52:32,528 - INFO - Starting resource sweep...
+2026-02-23 06:52:38,452 - INFO - Starting resource sweep...
+2026-02-23 06:52:41,276 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 06:52:41,277 - INFO - Terminated vivaldi.exe (PID: 6520) - Freed 123.6 MB
+2026-02-23 06:52:41,279 - INFO - Terminated MuseHub.exe (PID: 10424) - Freed 19.6 MB
+2026-02-23 06:52:41,279 - INFO - Terminated vivaldi.exe (PID: 11352) - Freed 83.4 MB
+2026-02-23 06:52:41,282 - INFO - Terminated vivaldi.exe (PID: 11564) - Freed 66.6 MB
+2026-02-23 06:52:46,019 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 06:52:46,026 - ERROR - Failed to kill 2820: (pid=2820, name='MuseAuthService.exe')
+2026-02-23 06:52:46,029 - ERROR - Failed to kill 4192: (pid=4192, name='MsMpEng.exe')
+2026-02-23 06:53:32,975 - INFO - Starting resource sweep...
+2026-02-23 06:53:40,573 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 06:53:40,579 - ERROR - Failed to kill 4: (pid=4, name='System')
+2026-02-23 06:54:33,431 - INFO - Starting resource sweep...
+2026-02-23 06:54:40,989 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 06:55:33,950 - INFO - Starting resource sweep...
+2026-02-23 06:55:41,507 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 06:55:41,514 - ERROR - Failed to kill 4: (pid=4, name='System')
+2026-02-23 06:55:41,519 - ERROR - Failed to kill 4192: (pid=4192, name='MsMpEng.exe')
+2026-02-23 06:56:34,383 - INFO - Starting resource sweep...
+2026-02-23 06:56:42,272 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 06:57:34,805 - INFO - Starting resource sweep...
+2026-02-23 06:57:42,044 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 06:58:35,235 - INFO - Starting resource sweep...
+2026-02-23 06:58:42,464 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 06:58:58,176 - INFO - Starting resource sweep...
+2026-02-23 06:59:08,552 - INFO - Starting resource sweep...
+2026-02-23 06:59:15,888 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 06:59:15,896 - ERROR - Failed to kill 2484: (pid=2484, name='MemCompression')
+2026-02-23 06:59:58,710 - INFO - Starting resource sweep...
+2026-02-23 07:00:09,171 - INFO - Starting resource sweep...
+2026-02-23 07:00:16,558 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 07:00:16,564 - ERROR - Failed to kill 2484: (pid=2484, name='MemCompression')
+2026-02-23 07:00:59,188 - INFO - Starting resource sweep...
+2026-02-23 07:01:09,705 - INFO - Starting resource sweep...
+2026-02-23 07:01:17,232 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 07:01:17,238 - ERROR - Failed to kill 2484: (pid=2484, name='MemCompression')
+2026-02-23 07:01:17,242 - INFO - Terminated ctfmon.exe (PID: 10548) - Freed 15.8 MB
+2026-02-23 07:01:59,609 - INFO - Starting resource sweep...
+2026-02-23 07:02:10,393 - INFO - Starting resource sweep...
+2026-02-23 07:02:18,153 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 07:03:00,079 - INFO - Starting resource sweep...
+2026-02-23 07:03:10,698 - INFO - Starting resource sweep...
+2026-02-23 07:03:18,238 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 07:03:18,242 - ERROR - Failed to kill 2484: (pid=2484, name='MemCompression')
+2026-02-23 07:04:00,551 - INFO - Starting resource sweep...
+2026-02-23 07:04:11,062 - INFO - Starting resource sweep...
+2026-02-23 07:04:18,622 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 07:04:18,628 - ERROR - Failed to kill 4: (pid=4, name='System')
+2026-02-23 07:04:18,634 - ERROR - Failed to kill 2484: (pid=2484, name='MemCompression')
+2026-02-23 07:05:00,970 - INFO - Starting resource sweep...
+2026-02-23 07:05:11,503 - INFO - Starting resource sweep...
+2026-02-23 07:05:19,027 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 07:05:19,029 - ERROR - Failed to kill 2484: (pid=2484, name='MemCompression')
+2026-02-23 07:06:01,445 - INFO - Starting resource sweep...
+2026-02-23 07:06:12,061 - INFO - Starting resource sweep...
+2026-02-23 07:06:19,542 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 07:06:19,544 - ERROR - Failed to kill 2484: (pid=2484, name='MemCompression')
+2026-02-23 07:07:01,789 - INFO - Starting resource sweep...
+2026-02-23 07:07:12,458 - INFO - Starting resource sweep...
+2026-02-23 07:07:19,384 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 07:07:19,398 - ERROR - Failed to kill 2484: (pid=2484, name='MemCompression')
+2026-02-23 07:07:19,407 - ERROR - Failed to kill 2820: (pid=2820, name='MuseAuthService.exe')
+2026-02-23 07:08:02,212 - INFO - Starting resource sweep...
+2026-02-23 07:08:12,226 - INFO - Starting resource sweep...
+2026-02-23 07:08:18,945 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 07:08:18,948 - ERROR - Failed to kill 2484: (pid=2484, name='MemCompression')
+2026-02-23 07:09:02,618 - INFO - Starting resource sweep...
+2026-02-23 07:09:12,630 - INFO - Starting resource sweep...
+2026-02-23 07:09:19,610 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 07:09:19,630 - ERROR - Failed to kill 2484: (pid=2484, name='MemCompression')
+2026-02-23 07:09:19,646 - INFO - Terminated ctfmon.exe (PID: 8164) - Freed 38.0 MB
+2026-02-23 07:10:03,064 - INFO - Starting resource sweep...
+2026-02-23 07:10:12,849 - INFO - Starting resource sweep...
+2026-02-23 07:10:19,619 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 07:10:19,629 - ERROR - Failed to kill 2484: (pid=2484, name='MemCompression')
+2026-02-23 07:10:19,630 - INFO - Terminated taskhostw.exe (PID: 6764) - Freed 12.5 MB
+2026-02-23 07:11:03,563 - INFO - Starting resource sweep...
+2026-02-23 07:11:13,460 - INFO - Starting resource sweep...
+2026-02-23 07:11:20,319 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 07:11:20,328 - ERROR - Failed to kill 4: (pid=4, name='System')
+2026-02-23 07:11:20,332 - ERROR - Failed to kill 2484: (pid=2484, name='MemCompression')
+2026-02-23 07:11:20,339 - ERROR - Failed to kill 4192: (pid=4192, name='MsMpEng.exe')
+2026-02-23 07:12:04,114 - INFO - Starting resource sweep...
+2026-02-23 07:12:14,255 - INFO - Starting resource sweep...
+2026-02-23 07:12:21,413 - ERROR - Failed to kill 0: (pid=0, name='System Idle Process')
+2026-02-23 07:12:21,419 - ERROR - Failed to kill 2484: (pid=2484, name='MemCompression')
+2026-02-23 07:12:59,023 - INFO - Starting resource sweep...
+2026-02-23 07:13:08,730 - INFO - Starting resource sweep...
+2026-02-23 07:13:15,562 - ERROR - Taskkill failed for MemCompression (2484): ERROR: The process with PID 2484 (child process of PID 4) could not be terminated.
+Reason: Access is denied.
+
+
+2026-02-23 07:13:15,675 - ERROR - Taskkill failed for MsMpEng.exe (4192): ERROR: The process with PID 4192 (child process of PID 1020) could not be terminated.
+Reason: Access is denied.
+
+
+2026-02-23 07:13:59,489 - INFO - Starting resource sweep...
+2026-02-23 07:14:09,044 - INFO - Starting resource sweep...
+2026-02-23 07:14:15,708 - ERROR - Taskkill failed for MemCompression (2484): ERROR: The process with PID 2484 (child process of PID 4) could not be terminated.
+Reason: Access is denied.
+
+
+2026-02-23 07:14:59,982 - INFO - Starting resource sweep...
+2026-02-23 07:15:09,434 - INFO - Starting resource sweep...
+2026-02-23 07:15:16,116 - ERROR - Taskkill failed for MemCompression (2484): ERROR: The process with PID 2484 (child process of PID 4) could not be terminated.
+Reason: Access is denied.
+
+
+2026-02-23 07:15:16,222 - ERROR - Taskkill failed for MuseAuthService.exe (2820): ERROR: The process with PID 2820 (child process of PID 1020) could not be terminated.
+Reason: Access is denied.
+
+
+2026-02-23 07:16:00,371 - INFO - Starting resource sweep...
+2026-02-23 07:16:09,880 - INFO - Starting resource sweep...
+2026-02-23 07:16:16,863 - ERROR - Taskkill failed for MemCompression (2484): ERROR: The process with PID 2484 (child process of PID 4) could not be terminated.
+Reason: Access is denied.
+
+
+2026-02-23 07:16:16,966 - ERROR - Taskkill failed for MsMpEng.exe (4192): ERROR: The process with PID 4192 (child process of PID 1020) could not be terminated.
+Reason: Access is denied.
+
+
+2026-02-23 07:23:22,235 - INFO - Terminated msedgewebview2.exe (PID: 3584) - Freed 32.3 MB
+2026-02-23 07:27:59,809 - INFO - Terminated msedgewebview2.exe (PID: 7056) - Freed 125.4 MB
+2026-02-23 07:27:59,933 - ERROR - Taskkill failed for msedgewebview2.exe (7272): ERROR: The process with PID 7272 (child process of PID 7056) could not be terminated.
+Reason: There is no running instance of the task.
+
+
+2026-02-23 07:28:00,098 - INFO - Terminated msedgewebview2.exe (PID: 8436) - Freed 32.6 MB
+2026-02-23 07:28:00,263 - ERROR - Taskkill failed for msedgewebview2.exe (8992): ERROR: The process with PID 8992 (child process of PID 8436) could not be terminated.
+Reason: There is no running instance of the task.
+
+
+2026-02-23 07:37:17,069 - INFO - Terminated OneDrive.exe (PID: 10920) - Freed 32.4 MB
+2026-02-23 07:45:03,788 - INFO - Terminated AppActions.exe (PID: 2240) - Freed 19.1 MB
+2026-02-23 07:50:51,858 - INFO - Terminated TextInputHost.exe (PID: 6684) - Freed 45.3 MB
+2026-02-23 07:51:21,660 - INFO - Terminated M365Copilot.exe (PID: 2044) - Freed 124.8 MB
+2026-02-23 07:51:21,759 - INFO - Terminated dllhost.exe (PID: 12348) - Freed 15.0 MB
+2026-02-23 07:52:22,143 - INFO - Terminated Widgets.exe (PID: 6832) - Freed 45.6 MB
+2026-02-23 07:52:22,229 - INFO - Terminated RuntimeBroker.exe (PID: 7840) - Freed 10.1 MB
+2026-02-23 07:52:22,320 - INFO - Terminated dllhost.exe (PID: 9028) - Freed 13.6 MB
+2026-02-23 07:52:52,573 - INFO - Terminated dllhost.exe (PID: 7412) - Freed 13.6 MB
+2026-02-23 07:53:22,701 - INFO - Terminated dllhost.exe (PID: 10656) - Freed 13.6 MB
+2026-02-23 07:53:52,831 - INFO - Terminated dllhost.exe (PID: 10924) - Freed 13.6 MB
+2026-02-23 07:54:22,999 - INFO - Terminated dllhost.exe (PID: 6944) - Freed 13.6 MB
+2026-02-23 07:54:53,238 - INFO - Terminated dllhost.exe (PID: 5684) - Freed 13.6 MB
+2026-02-23 07:55:23,360 - INFO - Terminated dllhost.exe (PID: 7496) - Freed 13.7 MB
+2026-02-23 07:55:53,649 - INFO - Terminated dllhost.exe (PID: 5728) - Freed 13.8 MB
+2026-02-23 07:56:23,849 - INFO - Terminated dllhost.exe (PID: 7840) - Freed 13.6 MB
+2026-02-23 07:56:54,445 - INFO - Terminated dllhost.exe (PID: 8444) - Freed 13.5 MB
+2026-02-23 07:56:54,547 - INFO - Terminated TextInputHost.exe (PID: 13108) - Freed 215.0 MB
+2026-02-23 07:57:24,536 - INFO - Terminated TextInputHost.exe (PID: 6464) - Freed 154.9 MB
+2026-02-23 07:57:54,662 - INFO - Terminated TextInputHost.exe (PID: 4020) - Freed 155.0 MB
+2026-02-23 07:58:25,148 - INFO - Terminated pyrefly.exe (PID: 7108) - Freed 140.0 MB
+2026-02-23 07:58:25,252 - INFO - Terminated dllhost.exe (PID: 9368) - Freed 13.8 MB
+2026-02-23 07:58:55,352 - INFO - Terminated dllhost.exe (PID: 5036) - Freed 13.6 MB
+2026-02-23 07:59:51,577 - INFO - Terminated dllhost.exe (PID: 10860) - Freed 13.6 MB
+2026-02-23 08:00:21,887 - INFO - Terminated dllhost.exe (PID: 6148) - Freed 13.5 MB
+2026-02-23 08:02:10,907 - INFO - Terminated dllhost.exe (PID: 3612) - Freed 13.5 MB
+2026-02-23 08:02:11,093 - INFO - Terminated sihost.exe (PID: 6592) - Freed 26.5 MB
+2026-02-23 08:02:11,228 - INFO - Terminated TextInputHost.exe (PID: 8144) - Freed 214.3 MB
+2026-02-23 08:02:11,352 - INFO - Terminated RuntimeBroker.exe (PID: 10472) - Freed 17.2 MB
+2026-02-23 08:02:41,996 - INFO - Terminated msedgewebview2.exe (PID: 1396) - Freed 38.8 MB
+2026-02-23 08:02:42,173 - INFO - Terminated sihost.exe (PID: 5164) - Freed 48.2 MB
+2026-02-23 08:02:42,927 - INFO - Terminated msedgewebview2.exe (PID: 7624) - Freed 94.3 MB
+2026-02-23 08:02:43,071 - INFO - Terminated RuntimeBroker.exe (PID: 7928) - Freed 10.3 MB
+2026-02-23 08:02:43,223 - INFO - Terminated RuntimeBroker.exe (PID: 8128) - Freed 43.7 MB
+2026-02-23 08:02:43,344 - INFO - Terminated powershell.exe (PID: 8896) - Freed 71.0 MB
+2026-02-23 08:03:42,293 - INFO - Terminated TextInputHost.exe (PID: 9868) - Freed 165.8 MB
+2026-02-23 08:04:12,472 - INFO - Terminated dllhost.exe (PID: 12424) - Freed 13.9 MB
+2026-02-23 08:04:42,811 - INFO - Terminated dllhost.exe (PID: 12148) - Freed 13.7 MB
+2026-02-23 08:07:02,589 - INFO - Terminated dllhost.exe (PID: 8380) - Freed 13.7 MB
+2026-02-23 08:08:03,215 - INFO - Terminated dllhost.exe (PID: 7916) - Freed 13.7 MB

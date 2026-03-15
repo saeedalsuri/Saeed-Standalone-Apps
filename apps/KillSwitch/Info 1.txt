@@ -1,0 +1,96 @@
+**Yes, it is possible to create a custom app/script** that monitors and automatically closes (or kills) background applications in Windows 10 and Windows 11 that are consuming noticeable **RAM** and/or **CPU** even when you're not actively using them.
+
+However, there are important limitations and risks:
+
+- Windows protects many system processes — you **cannot safely kill** them (e.g. explorer.exe, svchost.exe instances, csrss.exe, etc.) without crashing the OS.
+- "Background apps" (UWP/Microsoft Store style) behave differently from classic .exe programs.
+- Forcibly killing processes can cause lost work, corrupted files, or instability in some programs.
+- Completely automatic "idle" detection (no user input for X minutes) is possible but more complex.
+
+Here are the most realistic ways to achieve something close to what you want, ordered from easiest to most advanced:
+
+### 1. Easiest: Simple Batch/PowerShell script + Task Scheduler (no programming needed)
+Create a script that kills specific programs you know waste resources (Chrome tabs, Discord, Steam, etc.) when you run it manually or on a schedule.
+
+Example PowerShell script (save as `.ps1`):
+
+```powershell
+# List of processes to kill (edit this list!)
+$processesToKill = @("chrome", "msedge", "firefox", "discord", "steam", "spotify", "telegram", "notepad")
+
+foreach ($proc in $processesToKill) {
+    Get-Process -Name $proc -ErrorAction SilentlyContinue | 
+        Where-Object { $_.MainWindowTitle -eq "" } |  # try to target background ones
+        Stop-Process -Force
+}
+```
+
+Schedule it with **Task Scheduler** (e.g. every 30 minutes, or when idle via event triggers).
+
+Many YouTube tutorials show exactly this approach for "auto close idle apps".
+
+### 2. Smarter monitoring: Python script using `psutil` (recommended for custom logic)
+
+You can write a small program that:
+
+- Loops every 1–5 minutes
+- Checks all running processes
+- Kills ones using > X% CPU **and** low "user time delta" (not recently used)
+- Or kills ones using > Y MB RAM that have no visible window
+
+```python
+# pip install psutil (you need to install this library first)
+import psutil
+import time
+import datetime
+
+IGNORED = {"System Idle Process", "Registry", "Memory Compression", "dwm.exe", "explorer.exe", "svchost.exe"}
+
+while True:
+    for proc in psutil.process_iter(['pid', 'name', 'memory_info', 'cpu_percent', 'create_time']):
+        try:
+            name = proc.info['name'].lower().replace(".exe", "")
+            if name in IGNORED or "svchost" in name:
+                continue
+                
+            mem = proc.info['memory_info'].rss / (1024 * 1024)  # MB
+            cpu = proc.info['cpu_percent']
+            
+            # Example rule: kill if > 300 MB RAM + < 0.5% CPU last check + no window
+            if mem > 300 and cpu < 0.5 and not proc.children() and not any(proc.name() in w for w in psutil.Process().children(recursive=True)):
+                print(f"Killing {proc.info['name']}  ({mem:.1f} MB, {cpu:.1f}%)")
+                proc.kill()
+                
+        except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+            pass
+            
+    time.sleep(180)  # check every 3 minutes
+```
+
+**Warning**: `psutil.cpu_percent()` needs a short interval to be accurate — better logic uses two measurements with a 1-second sleep between.
+
+You can turn this into a small .exe with **PyInstaller** (`pyinstaller --onefile yourscript.py`).
+
+### 3. Advanced / Commercial tools that do similar things (no coding)
+
+These programs already exist and are much safer/more polished than a homemade script:
+
+- **Process Lasso** (Bitsum) → very powerful rules engine (can auto-kill, set CPU limits, terminate disallowed processes, etc.)
+- **Razer Cortex** / **MSI Afterburner** game boosters → often include "game mode" that suspends/kills background apps
+- **Chris Titus Tech's Windows Utility** → debloats and can disable many background services/apps
+
+### Quick summary – what actually works best in 2025/2026
+
+| Approach                  | Difficulty | Automatic? | Safe? | Custom rules? | Recommendation |
+|---------------------------|------------|------------|-------|---------------|----------------|
+| Manual Task Manager       | Very easy  | No         | Yes   | No            | Daily use      |
+| Built-in Settings > Background apps | Easy     | Partial    | Yes   | Limited       | First try      |
+| Batch + Task Scheduler    | Easy       | Yes        | Medium| Low           | Quick fix      |
+| Python + psutil script    | Medium     | Yes        | Medium–Low | High       | Best DIY       |
+| Process Lasso             | Easy       | Yes        | High  | Very high     | Best paid      |
+
+Start with built-in Windows settings (Settings → System → Power & battery → Battery usage → manage background activity) — it already restricts many apps quite well.
+
+If you want true "kill when using resources but I'm not touching it" behavior → the Python/psutil route or Process Lasso are your best options.
+
+Would you like a more detailed ready-to-use script for a specific set of programs (e.g. browser + messengers)?
