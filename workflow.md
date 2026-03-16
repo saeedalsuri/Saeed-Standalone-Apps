@@ -9,7 +9,6 @@ This document outlines the systematic workflow used to develop, optimize, and pa
 
 ## Stage 2: Selection of Framework
 Based on the app's complexity, a framework was selected:
-- **Electron**: Chosen for "Suno Master Studio" for its rich ecosystem and full system access.
 - **Neutralinojs**: Chosen for "Suno Song Maker" for its ultra-lightweight footprint (~5MB vs ~150MB).
 - **Tauri**: Chosen for "RingTone Master" and "DocReader" for its high performance and security using Rust.
 - **Capacitor**: Used for mobile-first versions (Android) to ensure cross-platform compatibility.
